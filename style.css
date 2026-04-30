@@ -25,7 +25,7 @@ CSS STRUCTURE:
 /* 引入阿里妈妈数黑体 */
 @font-face {
   font-family: '阿里妈妈数黑体';
-  src: url('/fonts/flaticon/font/阿里妈妈数黑体.ttf') format('truetype');
+  src: url('/fonts/flaticon/font/alimama.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
