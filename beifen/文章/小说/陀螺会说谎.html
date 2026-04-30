@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <title>陀螺会说谎 | 税展伟</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <link rel="stylesheet" type="text/css" href="../../css/vendor.css">
+  <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../../style.css">
+  <style>
+    table.table-bordered td,
+    table.table-bordered th {
+      text-align: center !important;
+    }
+    @media (max-width: 600px) {
+      table.table-bordered tr:first-child td {
+        white-space: normal !important;
+      }
+    }
+    .table-responsive {
+      overflow-x: auto !important;
+      -webkit-overflow-scrolling: touch;
+      max-width: 100%;
+    }
+    @media (max-width: 768px) {
+      .table-responsive table {
+        font-size: 10px !important;
+        table-layout: fixed;
+      }
+      .table-responsive td,
+      .table-responsive th {
+        padding: 6px 4px !important;
+        word-break: break-word !important;
+        overflow-wrap: break-word !important;
+        min-width: 60px;
+      }
+    }
+    @media (max-width: 576px) {
+      .table-responsive table {
+        font-size: 9px !important;
+      }
+      .table-responsive td,
+      .table-responsive th {
+        padding: 4px 3px !important;
+        min-width: 50px;
+      }
+    }
+    @media (max-width: 412px) {
+      .table-responsive table {
+        font-size: 8px !important;
+      }
+      .table-responsive td,
+      .table-responsive th {
+        padding: 3px 2px !important;
+        min-width: 40px;
+      }
+    }
+    @media (max-width: 350px) {
+      .table-responsive table {
+        font-size: 7px !important;
+      }
+      .table-responsive td,
+      .table-responsive th {
+        padding: 2px 1px !important;
+        min-width: 35px;
+        line-height: 1.2;
+      }
+    }
+    @media (max-width: 280px) {
+      .table-responsive table {
+        font-size: 6px !important;
+      }
+      .table-responsive td,
+      .table-responsive th {
+        padding: 2px 1px !important;
+        min-width: 30px;
+        line-height: 1.1;
+      }
+    }
+    @media (max-width: 200px) {
+      .table-responsive table {
+        font-size: 5px !important;
+      }
+      .table-responsive td,
+      .table-responsive th {
+        padding: 1px !important;
+        min-width: 25px;
+        line-height: 1;
+      }
+    }
+  </style>
+</head>
+<body class="bg-body article-page" data-bs-spy="scroll" data-bs-target="#header-nav" tabindex="0">
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <defs>
+    </defs>
+  </svg>
+  <a class="menu-btn"><span></span></a>
+  <div class="container-fluid overflow-hidden">
+    <header id="header-nav" class="col-lg-2 position-fixed px-5 bg-white h-100">
+      <div class="header-wrap d-flex flex-column justify-content-between h-100">
+        <div class="navigation">
+          <div class="site-logo mt-5">
+              <img src="../../images/main-logo.png" alt="logo" class="img-fluid">
+          </div>
+          <nav id="one-page-menu" class="vertical-menu my-5">
+            <ul class="menu-list list-unstyled">
+              <li><a href="../../ARRIE.html#home" class="nav-link">首页</a></li>
+              <li><a href="../../ARRIE.html#about" class="nav-link">关于</a></li>
+              <li><a href="../../ARRIE.html#resume" class="nav-link">简历</a></li>
+              <li><a href="../../../ARRIE.html#portfolio" class="nav-link">作品</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="mt-5 mb-7">
+          <ul class="list-unstyled d-flex justify-content-start flex-nowrap gap-3 mb-3">
+            <li>
+              <a class="text-dark" id="phone-icon" href="tel:17793663019">
+                <img src="../../images/电话.png" width="20" height="20" alt="电话">
+              </a>
+            </li>
+            <li>
+              <a class="text-dark" id="wechat-icon" href="weixin://search/17793663019">
+                <img src="../../images/微信.png" width="20" height="20" alt="微信">
+              </a>
+            </li>
+            <li>
+              <a class="text-dark" id="email-icon" href="mailto:3613677416@qq.com">
+                <img src="../../images/邮箱.png" width="20" height="20" alt="邮箱">
+              </a>
+            </li>
+          </ul>
+          <div class="py-2 border-top border-bottom">
+            <p class="m-0 py-1">
+              <a class="py-1 d-flex flex-nowrap text-decoration-none" id="tw-link" style="color: inherit; white-space: nowrap; flex-shrink: 1;">
+                <span style="font-weight: 500;">T/W:</span>177 9366 3019
+              </a>
+            </p>
+          </div>
+          <div class="email-links py-2 mb-4">
+            <div class="py-1 d-flex flex-nowrap" id="email-link" style="flex-shrink: 1;"><span style="font-weight: 500;">E:</span>3613677416@qq.com</div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="col-lg-10 offset-lg-2 p-5">
+      <section id="article-detail" class="my-5 py-5">
+        <div class="section-header my-5" data-aos="fade-up">
+                  <h1 class="display-4" style="font-size: 2rem; margin-bottom: 3.5rem;">陀螺会说谎</h1>
+                </div>
+        <div class="article-content" data-aos="fade-up">
+          <div class="row mb-8">
+            <div class="col-lg-12">
+              <div class="article-body">
+<img src="../../作品集/1.文字/6.小说/2.陀螺会说谎.png" alt="陀螺会说谎" class="img-fluid mb-4">
+            <br>
+            <br>
+            <br>
+            <p style="font-size: 1.1rem;">   “陀螺旋转的时候，时间会倒流，见不到的人都能再见面。一切美好的，都会被留住。”</p>
+            <p style="font-size: 1.1rem;">前一天，欣雨的消息突然出现在微信列表的时候，欧明的心跳还是加速了半拍。交往一个多月，这是欣雨第一次主动发消息给他。她的语气一如既往、恰如其分地甜蜜着:“阿明，周六要不要一起看电影？《超时空同居》呐！”</p>
+            <p style="font-size: 1.1rem;">于是现在，他们坐在电影院，看着陆鸣抱住谷小焦哭红了眼睛，他说:“对不起，我跟他们不一样，我可能给不了你想要的未来，但我一定能抚平你的过去。”</p>
+            <p style="font-size: 1.1rem;">前座的女孩忍不住低声抽泣着，她旁边的男孩抱住她，慌忙地抽出纸巾去擦眼泪，然后用空出的一只手，慢慢地把她拉向自己的肩膀。</p>
+            <p style="font-size: 1.1rem;">那是热恋中情侣该有的样子，有脆弱、会哭泣、渴望被关怀。欧明犹豫着要不要也握住欣雨的手，可是又注意到欣雨情绪稳定得像橱窗里得假人。她其实没有很入戏。</p>
+            <p style="font-size: 1.1rem;">就像他们的恋爱，她一直保持着可怕的理智和冷静。欣雨告诉欧明，她一直是这样冷淡的性子，“突然感慨着哭泣，那只是小女孩的爱情啊。”</p>
+            <p style="font-size: 1.1rem;">看完电影已经是十一点半了，他送她到楼下。暑夏的星空明亮地闪烁着，温暖的晚风正徐徐吹来。欧明突然发现他好久都没遇到这样的好意境了，也可能是看过电影的感慨，他寻找着欣雨的眼睛，觉得自己有好些话要跟她说。可是欣雨的目光正看向其他地方，她疏离地微笑着，只是道了一句“晚安，回去路上小心”，就向楼上走去。</p>
+            <p style="font-size: 1.1rem;">这本是他们日常的道别，没有情人间的傻话，也没有过多的交流。像极了成年人该有的爱情，简单直接，从不浪费时间。可是今天欧明叫住了她。他摊开手，把一只小小的栗色陀螺，放进她的掌心，“陀螺旋转的时候，一切美好的东西，都会被留住。然后呢，悲伤变短，快乐就会很长。”</p>
+            <p style="font-size: 1.1rem;">欣雨的眼睛闪烁了几下，然后又平静下来。她轻轻地抱了欧明一下，在欧明抱紧她之前，适时地松开手。“好喜欢啊！为什么你会这么暖呢？”</p>
+            <p style="font-size: 1.1rem;">“我也希望我是真的可以温暖你。”欧明躺回床上的时候这样想，“希望我像陆鸣温暖谷小焦一样，也能抚平你的过去。”</p>
+            <p style="font-size: 1.1rem;">他记得欣雨跟他说过的前男友，她说那时候她会熬半天就等他回一个消息，会在他主动联系的时候跳起来抓着手机回消息，跟他面对面说一句话就面红耳赤。“不过，现在我都快忘记那是什么样的感觉了。我为什么还要记着他呢？”</p>
+            <p style="font-size: 1.1rem;">欣雨平静地跟他说这些话的时候，欧明却不由自主地想起某部美剧里的台词:我们皆是凡人，倾心于谁无法自控。是啊，要是能由得自己，谁会去爱上一个不爱自己的人呢？</p>
+            <p style="font-size: 1.1rem;">周末的时候，欧明约欣雨去逛街。两人坐在咖啡店，点了甜点和果饮，欣雨坐在桌子对面，身子优雅地靠进椅子里，“今天好晴朗啊！”她慵懒地伸了个懒腰，露出优美的身体曲线，明亮的眼睛钻石般闪耀着，探过身来，轻轻吻了一下欧明的侧脸。就在欧明想要仔细捕捉的时候，她又恰如其分地收回身去，望向窗外。</p>
+            <p style="font-size: 1.1rem;">瞬间的浓情蜜意，然后精准地适可而止。也许这就是自己着迷欣雨的原因吧。欧明看着她疏远的坐姿，忍不住想。</p>
+            <p style="font-size: 1.1rem;">两人有一句没一句地聊着天，聊天内容停留在欣雨最近在追的动漫，或者微博看到的某个笑点，最后聊到了当天下午的阵雨预报。然后她主动结束话题，带起耳机，开始追起她最近心仪的某部番剧。于是欧明也抓起手机，尽量表现出津津有味的样子。</p>
+            <p style="font-size: 1.1rem;">“为什么选择和我在一起？”在欣雨环起自己手臂的时候，欧明装作不经意地问她。这时候他们已经从咖啡店出来，向对面的商场走去。“嗯……”欣雨明明是思考的语气，但欧明知道，这就是她全部的回答了。</p>
+            <p style="font-size: 1.1rem;">他们从商场出来的时候，碰到了欣雨的前男友。虽然欧明从没有见过那个男生，也没有看过他的照片，但他看向自己的眼神，还有欣雨不自觉加快的步伐，都印证了他的猜想。</p>
+            <p style="font-size: 1.1rem;">他们坐车回家。两人坐在出租车后座，中间隔了半尺宽的距离。欧明手臂支起脑袋，看着路上一闪而过的孤独风景。在车窗路过树荫的时候，他从反光里看到欣雨也望着另一侧的窗外，不知道在想些什么。他脑海里一直回放欣雨遇见那个男生时加快的步伐，还有脸上掩饰不住的局促。</p>
+            <p style="font-size: 1.1rem;">欧明伸手越过那半尺宽的距离，把欣雨的手抓进手心。她没有反抗，但也没有反过来握紧他的手。她的手是冰冷的，同她整个人一样。</p>
+            <p style="font-size: 1.1rem;">窗外刮着风，下起了雨。欧明从车上下来，拉着欣雨往街边的楼下跑去，可是欣雨拉住他。</p>
+            <p style="font-size: 1.1rem;">“吻我。”她在行道树旁站定，仰起头祈求般看向欧明。那双琥珀般的瞳孔后面第一次鲜活地燃烧着某种浓烈情感，欧明无法读懂，但没来由地确信与自己无关。</p>
+            <p style="font-size: 1.1rem;">风呼呼地刮过来，吹乱了欣雨的头发，雨水大颗大颗地从她的脸颊滑落，滚烫地爬上欧明的手掌，她的呼吸潮湿而热烈，不容抗拒地包裹而来。欧明却瞬间被一种铺天盖地的悲凉吞没了。他突然明白过来，此刻他不是他，是刚刚商场出口碰到的那个男生。</p>
+            <p style="font-size: 1.1rem;">大概过了一个世纪那么久，欣雨单薄的连衣裙都快湿透了，欧明轻轻推开她紧紧环抱的双手，心疼地说，“雨太大了，我们先避一避。听话。”</p>
+            <p style="font-size: 1.1rem;">欧明一直麻痹自己，成年人的恋爱就该是冷静和克制的，为欣雨的疏离和忽冷忽热找了一万种借口。他内心深处其实明白欣雨没有很喜欢自己，也许自己也没有那么喜欢欣雨。可是在这一刻，他突然觉得，要通过努力才能去喜欢一个人，是一件多么悲伤和狼狈的事。</p>
+            <p style="font-size: 1.1rem;">“你的信太过官方，都不说想我。”一周后的某天，欧明把这句话读给欣雨听。欣雨笑着靠过来，枕着他的大腿，“这个我之前听过，是周恩来写给邓颖超的信吧？当他们隔着遥远的山川河流，就是靠这些温暖的文字寄托思念。”</p>
+            <p style="font-size: 1.1rem;">这是难得的温存。如果这样回忆起来，他们之间其实也有过动人的情话。心情好的时候，欣雨发给他微博上看到的句子，“别懂事太早，别涉世太深，别爱得太满，别睡得太晚，别信得太多，别吃得太饱，别对人太好。”</p>
+            <p style="font-size: 1.1rem;">“这些话，你怎么看呢？”欧明装作不经意地问欣雨，却被“别爱太满”深深地刺痛了一下。</p>
+            <p style="font-size: 1.1rem;">“我觉得说的很对哎。”</p>
+            <p style="font-size: 1.1rem;">“其实懂事太早，涉世太深也没什么不好，不是有句歌词，叫‘我相信学聪明以后的单纯，你继续现实里天真 ’吗 ？”</p>
+            <p style="font-size: 1.1rem;">“哦我知道那首歌，我也喜欢 ！”</p>
+            <p style="font-size: 1.1rem;">“这么有默契 ！”欧明轻轻笑起来，手机却不小心翻到了欣雨很久前更新的动态，她写到，“你认真喜欢一个人的样子好丑。”文字下面是一张哭泣的小丑图片。</p>
+            <p style="font-size: 1.1rem;">“欣雨？”欧明一边删除浏览记录，一边问她，“你还会全心全意地爱一个人吗？”</p>
+            <p style="font-size: 1.1rem;">“不会。”她抬起头，把纷乱的发丝细心地拢到耳后，“不是说不能爱得太满嘛？”怀里的女孩眉眼带着笑意，说起“不会”两个字的时候，声音干脆而决绝，就像说着“明天天气晴”一样地自然。</p>
+            <p style="font-size: 1.1rem;">那是她上一段失败的爱情留下的唯一收获吧，现在变成她自我保护的盔甲，包裹起她的心，也拒绝了别人去靠近。</p>
+            <p style="font-size: 1.1rem;">其实欧明早就知道答案，何苦又要听她多重复一遍呢？他曾经也浪漫地想，即使她对自己的喜欢永远不会那么狂热滚烫，他也要像暖阳一样呵护包容她内心的缺失和遗憾，可是他好像高估了自己。他不是谷小焦的陆鸣。</p>
+            <p style="font-size: 1.1rem;">在一个炎热的下午，欣雨来找欧明。他们站在楼层的阴影里，正计划要不要去水上乐园 ，就看见远处一个身影慢慢走过来。而在那个影子注意到他们之前，欣雨突然挣脱掉欧明握紧的手，转身朝后跑去。</p>
+            <p style="font-size: 1.1rem;">那是欣雨的前男友。欧明冥冥知道这一天终将到来，但他没有想到会这么快。</p>
+            <p style="font-size: 1.1rem;">欣雨跑出去很远，一点也没有要停下的意思。欧明追上去，试图抱住她，可是她挣扎着，继续向远处跑去。欧明看到她站在马路旁，伸手拦了一辆车。</p>
+            <p style="font-size: 1.1rem;">他冲上去，打开欣雨已经关起的门，将她拉向自己的怀抱，可是她激烈地挣扎着，甩开了他的手。</p>
+            <p style="font-size: 1.1rem;">欧明看着眼前熟悉又陌生的姑娘。“为什么？”他听到自己的声音失控着，“你们只是碰巧遇到，他只是朝你走过来而已！”</p>
+            <p style="font-size: 1.1rem;">“对不起。”她垂下头走向路边。欧明寻不到她的目光，可又仿佛看到，那双眸子此刻不再雾一样神秘了，而是透露出任何以往都没有的清醒。</p>
+            <p style="font-size: 1.1rem;">“我自己都以为，我已经忘记他了。”那个似乎一直很淡漠、清冷的女生，不再掩饰自己抽泣的声音。她蹲在马路旁，任眼泪一颗颗掉落在路面，晕开一圈又一圈的深色斑痕。</p>
+            <p style="font-size: 1.1rem;">欧明看着她哭泣的样子，突然觉得无比心疼。他蹲到她身边，抱住她、轻轻地拍着她的后背。这一次她没有甩开他的手。</p>
+            <p style="font-size: 1.1rem;">“其实我们都没必要勉强自己。”他听见自己说。</p>
+            <p style="font-size: 1.1rem;">从没有这样一个时刻，他们之间的拥抱如此踏实而亲近。</p>
+            <p style="font-size: 1.1rem;">欧明突然明白，他们之间自始至终缺失的是什么。也许一个人一旦体验过日子里有人温暖陪伴的充实，便很难再回归到孤单的孤独之中，但感情不是你来我往的补空游戏，一个人的离开并不能靠另一个人来填满。</p>
+            <p style="font-size: 1.1rem;">而至于自欺欺人地勉强自己努力去喜欢一个人，他们终于后知后觉地发现，就像说自己旋转时能留住所有的美好一样，只是这场电影里，陀螺说过的、最无能为力的谎。</p>
+            <p style="font-size: 1.1rem;">欣雨站起来，她已经擦干了眼泪，那双漂亮的眼睛透露出许久不见的透亮，她后退着朝欧明挥手，脚步格外地轻盈。</p>
+            <p style="font-size: 1.1rem;">“再见。”在这样夏日明媚的一天，欧明微笑着和欣雨道别。然后他转过身望向蔚蓝的天空，闭起眼，目光迷失在耀眼的阳光里、更辉煌明亮的所在。</p>
+</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="fixed-return-btn">
+        <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" class="btn btn-dark">回到顶部</a>
+      </div>
+    </main>
+  </div>
+  <script src="../../js/jquery-1.11.0.min.js"></script>
+  <script src="../../js/plugins.js"></script>
+  <script src="../../js/script.js"></script>
+  <script src="../../js/bootstrap.bundle.min.js"></script>
+  <script src="../../js/aos.js"></script>
+  <script>
+    window.scrollTo(0, 0);
+    document.addEventListener('DOMContentLoaded', function() {
+      window.scrollTo(0, 0);
+    });
+    window.onload = function() {
+      window.scrollTo(0, 0);
+    };
+    setTimeout(function() {
+      window.scrollTo(0, 0);
+    }, 100);
+  </script>
+  <script>
+  </script>
+  </html>
