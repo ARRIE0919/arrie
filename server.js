@@ -1,7 +1,6 @@
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
-const fetch = require('node-fetch');
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -50,6 +49,9 @@ app.use(express.json());
 // 代理豆包API请求
 app.post('/api/chat', async (req, res) => {
   try {
+    // 动态导入 node-fetch
+    const { default: fetch } = await import('node-fetch');
+    
     const { message } = req.body;
     
     if (!message) {
