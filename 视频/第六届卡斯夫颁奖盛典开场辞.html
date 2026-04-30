@@ -1,359 +1,717 @@
 <!DOCTYPE html>
+
 <html lang="zh-CN">
 
+
+
 <head>
-  <title>第六届卡斯夫颁奖盛典开场辞 | 税展?/title>
+
+  <title>第六届卡斯夫颁奖盛典开场辞 | 税展伟</title>
+
   <meta charset="utf-8">
+
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <meta name="format-detection" content="telephone=no">
+
   <meta name="apple-mobile-web-app-capable" content="yes">
+
   <meta name="author" content="">
+
   <meta name="keywords" content="">
+
   <meta name="description" content="">
+
   <link rel="stylesheet" type="text/css" href="/css/vendor.css">
+
   <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.1/css/bootstrap.min.css" rel="stylesheet">
+
   <link rel="stylesheet" type="text/css" href="/style.css">
+
+
 
 </head>
 
+
+
 <body class="bg-body article-page" data-bs-spy="scroll" data-bs-target="#header-nav" tabindex="0">
+
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+
     <defs>
+
     </defs>
+
   </svg>
+
+
 
   <a class="menu-btn"><span></span></a>
 
+
+
   <div class="container-fluid overflow-hidden">
+
     <header id="header-nav" class="col-lg-2 position-fixed px-5 bg-white h-100">
+
       <div class="header-wrap d-flex flex-column justify-content-between h-100">
+
         <div class="navigation">
+
           <div class="site-logo mt-5">
+
               <img src="/images/main-logo.png" alt="logo" class="img-fluid">
+
           </div>
+
+
 
           <nav id="one-page-menu" class="vertical-menu my-5">
+
             <ul class="menu-list list-unstyled">
-              <li><a href="../ARRIE.html#home" class="nav-link">首页</a></li>
-              <li><a href="../ARRIE.html#about" class="nav-link">关于</a></li>
-              <li><a href="../ARRIE.html#resume" class="nav-link">简?/a></li>
-              <li><a href="../ARRIE.html#portfolio" class="nav-link">作品</a></li>
+
+              <li><a href="/ARRIE.html#home" class="nav-link">首页</a></li>
+
+              <li><a href="/ARRIE.html#about" class="nav-link">关于</a></li>
+
+              <li><a href="/ARRIE.html#resume" class="nav-link">简历</a></li>
+
+              <li><a href="/ARRIE.html#portfolio" class="nav-link">作品</a></li>
+
             </ul>
+
           </nav>
+
         </div>
+
         <div class="mt-5 mb-7">
+
           <ul class="list-unstyled d-flex justify-content-start flex-nowrap gap-3 mb-3">
+
             <li>
+
               <a class="text-dark" id="phone-icon" href="tel:17793663019">
+
                 <img src="/images/电话.png" width="20" height="20" alt="电话">
+
               </a>
+
             </li>
+
             <li>
+
               <a class="text-dark" id="wechat-icon" href="weixin://search/17793663019">
+
                 <img src="/images/微信.png" width="20" height="20" alt="微信">
+
               </a>
+
             </li>
+
             <li>
+
               <a class="text-dark" id="email-icon" href="mailto:3613677416@qq.com">
+
                 <img src="/images/邮箱.png" width="20" height="20" alt="邮箱">
+
               </a>
+
             </li>
+
           </ul>
+
           <div class="py-2 border-top border-bottom">
+
             <p class="m-0 py-1">
+
               <a class="py-1 d-flex flex-nowrap text-decoration-none" id="tw-link" style="color: inherit; white-space: nowrap; flex-shrink: 1;">
+
                 <span style="font-weight: 500;">T/W:</span>177 9366 3019
+
               </a>
+
             </p>
+
           </div>
+
           <div class="email-links py-2 mb-4">
+
             <div class="py-1 d-flex flex-nowrap" id="email-link" style="flex-shrink: 1;"><span style="font-weight: 500;">E:</span>3613677416@qq.com</div>
+
           </div>
+
           
+
           <script>
+
             document.addEventListener('DOMContentLoaded', function() {
+
               const phoneIcon = document.getElementById('phone-icon');
+
               const wechatIcon = document.getElementById('wechat-icon');
+
               const emailIcon = document.getElementById('email-icon');
+
               const twLink = document.getElementById('tw-link');
+
               const emailLink = document.getElementById('email-link');
+
               
+
               function isMobileDevice() {
+
                 return (typeof window.orientation !== 'undefined') || (navigator.userAgent.indexOf('IEMobile') !== -1);
+
               }
+
               
+
               phoneIcon.addEventListener('click', function(e) {
+
                 if (!isMobileDevice()) {
+
                   e.preventDefault();
+
                   alert('请用手机拨打');
+
                 }
+
               }
+
               
+
               [phoneIcon, wechatIcon, emailIcon].forEach(icon => {
+
                 icon.style.transition = 'transform 0.3s ease-out';
+
                 icon.style.display = 'inline-block';
+
                 
+
                 icon.addEventListener('mouseenter', function() {
+
                   this.style.transform = 'scale(1.2)';
+
                 });
+
                 
+
                 icon.addEventListener('mouseleave', function() {
+
                   this.style.transform = 'scale(1)';
+
                 });
+
               });
+
               
+
               twLink.style.cursor = 'default';
+
               twLink.addEventListener('mouseenter', function() {
+
                 phoneIcon.style.transform = 'scale(1.2)';
+
                 wechatIcon.style.transform = 'scale(1.2)';
+
               });
+
               twLink.addEventListener('mouseleave', function() {
+
                 phoneIcon.style.transform = 'scale(1)';
+
                 wechatIcon.style.transform = 'scale(1)';
+
               });
+
               
+
               emailLink.style.cursor = 'default';
+
               emailLink.addEventListener('mouseenter', function() {
+
                 emailIcon.style.transform = 'scale(1.2)';
+
               });
+
               emailLink.addEventListener('mouseleave', function() {
+
                 emailIcon.style.transform = 'scale(1)';
+
               });
+
               
+
               const navLinks = document.querySelectorAll('.nav-link');
+
               navLinks.forEach(link => {
+
                 link.style.transition = 'transform 0.3s ease-out, font-weight 0.3s ease-out';
+
                 
+
                 link.addEventListener('mouseenter', function() {
+
                   this.style.transform = 'scale(1.05)';
+
                   this.style.fontWeight = '700';
+
                 });
+
                 
+
                 link.addEventListener('mouseleave', function() {
+
                   this.style.transform = 'scale(1)';
+
                   this.style.fontWeight = '400';
+
                 });
+
               });
+
             });
+
             
 
+
+
             };
+
             setTimeout(function() {
+
               window.scrollTo(0, 0);
+
             }, 100);
+
           </script>
+
         </div>
+
       </div>
+
     </header>
 
+
+
     <main class="col-lg-10 offset-lg-2 p-5">
+
       <section id="article-detail" class="my-5 py-5">
+
         <div class="section-header my-5" data-aos="fade-up">
+
                   <h1 class="display-4" style="font-size: 2rem; margin-bottom: 3.5rem;">第六届卡斯夫颁奖盛典开场辞</h1>
+
                 </div>
 
+
+
         <div class="article-content" data-aos="fade-up">
+
           <div class="row mb-8">
+
             <div class="col-lg-12">
+
               <div class="article-body" style="text-align: center; font-size: 1.1rem;">
+
 <div style="position: relative; width: 100%;">
-            <video id="main-video" controls preload="auto" poster="/作品?3.视频/2.活动宣发\3.第六届卡斯夫颁奖盛典开场辞\第六届卡斯夫颁奖盛典开?png" class="img-fluid mb-4" style="width: 100%;">
-              <source src="/作品?3.视频/2.活动宣发\3.第六届卡斯夫颁奖盛典开场辞\第六届卡斯夫颁奖盛典开?mp4" type="video/mp4">
+
+            <video id="main-video" controls preload="auto" poster="/作品集/3.视频/2.活动宣发\3.第六届卡斯夫颁奖盛典开场辞\第六届卡斯夫颁奖盛典开场.png" class="img-fluid mb-4" style="width: 100%;">
+
+              <source src="/作品集/3.视频/2.活动宣发\3.第六届卡斯夫颁奖盛典开场辞\第六届卡斯夫颁奖盛典开场.mp4" type="video/mp4">
+
             </video>
+
             <div id="play-button" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100px; height: 100px; background-color: rgba(0,0,0,0.5); border-radius: 50%; display: flex; align-items: center; justify-content: center; z-index: 10; pointer-events: none;">
+
               <div style="width: 0; height: 0; border-left: 40px solid white; border-top: 25px solid transparent; border-bottom: 25px solid transparent; margin-left: 10px;"></div>
+
             <script>
+
               var video = document.getElementById('main-video');
+
               var playButton = document.getElementById('play-button');
+
               
+
               video.addEventListener('play', function() {
+
                 playButton.style.display = 'none';
+
               });
+
               
+
               video.addEventListener('pause', function() {
+
                 playButton.style.display = 'flex';
+
               });
+
             </script>
+
             </div>
+
           </div>
+
           <script>
+
             document.addEventListener('DOMContentLoaded', function() {
+
               const phoneIcon = document.getElementById('phone-icon');
+
               const wechatIcon = document.getElementById('wechat-icon');
+
               const emailIcon = document.getElementById('email-icon');
+
               const twLink = document.getElementById('tw-link');
+
               const emailLink = document.getElementById('email-link');
+
               
+
               function isMobileDevice() {
+
                 return (typeof window.orientation !== 'undefined') || (navigator.userAgent.indexOf('IEMobile') !== -1);
+
               }
+
               
+
               phoneIcon.addEventListener('click', function(e) {
+
                 if (!isMobileDevice()) {
+
                   e.preventDefault();
+
                   alert('请用手机拨打');
+
                 }
+
               }
+
               
+
               [phoneIcon, wechatIcon, emailIcon].forEach(icon => {
+
                 icon.style.transition = 'transform 0.3s ease-out';
+
                 icon.style.display = 'inline-block';
+
                 
+
                 icon.addEventListener('mouseenter', function() {
+
                   this.style.transform = 'scale(1.2)';
+
                 });
+
                 
+
                 icon.addEventListener('mouseleave', function() {
+
                   this.style.transform = 'scale(1)';
+
                 });
+
               });
+
               
+
               twLink.style.cursor = 'default';
+
               twLink.addEventListener('mouseenter', function() {
+
                 phoneIcon.style.transform = 'scale(1.2)';
+
                 wechatIcon.style.transform = 'scale(1.2)';
+
               });
+
               twLink.addEventListener('mouseleave', function() {
+
                 phoneIcon.style.transform = 'scale(1)';
+
                 wechatIcon.style.transform = 'scale(1)';
+
               });
+
               
+
               emailLink.style.cursor = 'default';
+
               emailLink.addEventListener('mouseenter', function() {
+
                 emailIcon.style.transform = 'scale(1.2)';
+
               });
+
               emailLink.addEventListener('mouseleave', function() {
+
                 emailIcon.style.transform = 'scale(1)';
+
               });
+
               
+
               const navLinks = document.querySelectorAll('.nav-link');
+
               navLinks.forEach(link => {
+
                 link.style.transition = 'transform 0.3s ease-out, font-weight 0.3s ease-out';
+
                 
+
                 link.addEventListener('mouseenter', function() {
+
                   this.style.transform = 'scale(1.05)';
+
                   this.style.fontWeight = '700';
+
                 });
+
                 
+
                 link.addEventListener('mouseleave', function() {
+
                   this.style.transform = 'scale(1)';
+
                   this.style.fontWeight = '400';
+
                 });
+
               });
+
             });
+
             
 
+
+
             };
+
             setTimeout(function() {
+
               window.scrollTo(0, 0);
+
             }, 100);
+
           </script>
+
           <br>
+
           <br>
-时光荏苒，岁月如?br>
+
+时光荏苒，岁月如梭<br>
+
 又是一年，辉煌再现<br>
-热爱成就美好，匠心铸就信?br>
+
+热爱成就美好，匠心铸就信仰<br>
+
 预见未来最好的方式，就是遇见于当下最好的自己<br>
+
 <br>
+
 世界风云巨变，恰逢百年未有之大变局<br>
-在企业经营的发展岁月?br>
+
+在企业经营的发展岁月中<br>
+
 我们用勇气书写传奇，用坚持点缀明天<br>
+
 仰望星空，脚踏实地，高举梦想明灯<br>
-用脚步丈量世?br>
-用生命点燃精?br>
-用初心撑起希?br>
-用汗水擘画未?br>
+
+用脚步丈量世界<br>
+
+用生命点燃精彩<br>
+
+用初心撑起希望<br>
+
+用汗水擘画未来<br>
+
 <br>
+
 当第六届西湖峰会的钟声再度响起，卡斯夫年度盛典如约而至<br>
-12年来，聚汽网坚持深耕行业初?br>
+
+12年来，聚汽网坚持深耕行业初心<br>
+
 陪伴了无数优秀企业奋进成长<br>
-助力了万千生产企业锐意开?br>
-携手了一众名优品牌毅然前?br>
+
+助力了万千生产企业锐意开拓<br>
+
+携手了一众名优品牌毅然前行<br>
+
 陪护了万千服务商锐意进取<br>
+
 <br>
-我们深信，用心助力名?品牌 ，必会创造价值的力量<br>
+
+我们深信，用心助力名优 品牌 ，必会创造价值的力量<br>
+
 我们坚信，心之所向，匠心铸就不凡未来<br>
+
 我们思考，未来之路能否因当下努力而被改写<br>
+
 我们前行，用温暖陪伴厂商，用进化引领渠道，用桥梁搭建未来<br>
+
 <br>
-12年来，聚汽网用服务聚焦打造口?br>
-12年来，聚汽网用精准撮合交付满?br>
-12年来，聚汽网用智慧凝聚前沿，用信息指引方?br>
+
+12年来，聚汽网用服务聚焦打造口碑<br>
+
+12年来，聚汽网用精准撮合交付满意<br>
+
+12年来，聚汽网用智慧凝聚前沿，用信息指引方向<br>
+
 这一路前行，我们对行业心怀敬畏<br>
-这一路前行，我们对方向仍然清?br>
-这一路前行，我们对同伴仍然相?br>
-这一路前行，我们对自己始终寄予厚?br>
-执着，拼搏，进取，用创造标明心之所?br>
+
+这一路前行，我们对方向仍然清晰<br>
+
+这一路前行，我们对同伴仍然相信<br>
+
+这一路前行，我们对自己始终寄予厚望<br>
+
+执着，拼搏，进取，用创造标明心之所向<br>
+
 <br>
-?018年起步，卡斯夫中国行遍布全国各个角落<br>
+
+从2018年起步，卡斯夫中国行遍布全国各个角落<br>
+
 潜心下沉区域渠道，聚力打造厂商修合作桥梁<br>
-厂商一体，修配融合，知识课?br>
-市场实操、品牌造势、行业分?br>
-用双脚丈量大地，用汗水交付微?br>
+
+厂商一体，修配融合，知识课堂<br>
+
+市场实操、品牌造势、行业分析<br>
+
+用双脚丈量大地，用汗水交付微笑<br>
+
 <br>
-遥望星河，心中火花对话宇宙浩?br>
-与江河一同奔涌，与群山一起矗立，与鲲鹏并肩齐?br>
-卡斯夫，守正创新，开拓进?br>
-卡斯夫，凝聚行业的顶尖智?br>
-卡斯夫，用行业标杆打造服务新生?br>
+
+遥望星河，心中火花对话宇宙浩瀚<br>
+
+与江河一同奔涌，与群山一起矗立，与鲲鹏并肩齐飞<br>
+
+卡斯夫，守正创新，开拓进取<br>
+
+卡斯夫，凝聚行业的顶尖智慧<br>
+
+卡斯夫，用行业标杆打造服务新生态<br>
+
 <br>
-梦之所指，心之所?br>
-穿越光影，共同耕?br>
+
+梦之所指，心之所向<br>
+
+穿越光影，共同耕耘<br>
+
 <br>
+
 与领军制造商一道携手，比翼齐飞<br>
+
 与优秀供应链一起融合，腾飞梦想<br>
+
 与杰出汽配商一同成长，锐意进取<br>
+
 与卓越汽修厂一路前行，匠心筑梦<br>
+
 与优秀服务商并肩奋战，助力产业<br>
+
 <br>
-伟大出自平凡，高楼起于平?br>
+
+伟大出自平凡，高楼起于平地<br>
+
 在新能源快速增长的时代<br>
-看准时机，开创进?br>
+
+看准时机，开创进取<br>
+
 继往开来，再续商业文明<br>
+
 <br>
+
 大变局，新征程<br>
-为行业立心，为产业立命，为经营化神奇，为增长创未?br>
-让我们一起共建汽车后市场新商业文?br>
+
+为行业立心，为产业立命，为经营化神奇，为增长创未来<br>
+
+让我们一起共建汽车后市场新商业文明<br>
+
 <br>
-遇见卡斯?br>
-预见将来更好的自?br>
+
+遇见卡斯夫<br>
+
+预见将来更好的自己<br>
+
 Hello，Carsf Awards !
+
               </div>
+
             </div>
+
           </div>
+
         </div>
+
       </section>
+
       
+
       <div class="fixed-return-btn">
+
         <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" class="btn btn-dark">回到顶部</a>
+
       </div>
+
     </main>
+
   </div>
 
+
+
   <script src="/js/jquery-1.11.0.min.js"></script>
+
   <script src="/js/plugins.js"></script>
+
   <script src="/js/script.js"></script>
+
   <script src="/js/bootstrap.bundle.min.js"></script>
+
   <script src="/js/aos.js"></script>
+
   <script>
+
   
+
   <script>
+
     // 视频播放控制
+
     var videos = document.querySelectorAll('video');
+
     var playButtons = document.querySelectorAll('[id^="play-button"]');
+
     
+
     videos.forEach(function(video, index) {
+
       var playButton = playButtons[index];
+
       if (playButton) {
+
         video.addEventListener('play', function() {
+
           playButton.style.display = 'none';
+
         });
+
         
+
         video.addEventListener('pause', function() {
+
           playButton.style.display = 'flex';
+
         });
+
       }
+
     });
+
   </script>
+
 </html>

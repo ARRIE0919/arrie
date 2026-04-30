@@ -1,343 +1,685 @@
 <!DOCTYPE html>
+
 <html lang="zh-CN">
 
+
+
 <head>
-  <title>2023西湖峰会宣传——风景篇 | 税展?/title>
+
+  <title>2023西湖峰会宣传——风景篇 | 税展伟</title>
+
   <meta charset="utf-8">
+
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <meta name="format-detection" content="telephone=no">
+
   <meta name="apple-mobile-web-app-capable" content="yes">
+
   <meta name="author" content="">
+
   <meta name="keywords" content="">
+
   <meta name="description" content="">
+
   <link rel="stylesheet" type="text/css" href="/css/vendor.css">
+
   <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.1/css/bootstrap.min.css" rel="stylesheet">
+
   <link rel="stylesheet" type="text/css" href="/style.css">
+
+
 
 </head>
 
+
+
 <body class="bg-body article-page" data-bs-spy="scroll" data-bs-target="#header-nav" tabindex="0">
+
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+
     <defs>
+
     </defs>
+
   </svg>
+
+
 
   <a class="menu-btn"><span></span></a>
 
+
+
   <div class="container-fluid overflow-hidden">
+
     <header id="header-nav" class="col-lg-2 position-fixed px-5 bg-white h-100">
+
       <div class="header-wrap d-flex flex-column justify-content-between h-100">
+
         <div class="navigation">
+
           <div class="site-logo mt-5">
+
               <img src="/images/main-logo.png" alt="logo" class="img-fluid">
+
           </div>
+
+
 
           <nav id="one-page-menu" class="vertical-menu my-5">
+
             <ul class="menu-list list-unstyled">
-              <li><a href="../ARRIE.html#home" class="nav-link">首页</a></li>
-              <li><a href="../ARRIE.html#about" class="nav-link">关于</a></li>
-              <li><a href="../ARRIE.html#resume" class="nav-link">简?/a></li>
-              <li><a href="../ARRIE.html#portfolio" class="nav-link">作品</a></li>
+
+              <li><a href="/ARRIE.html#home" class="nav-link">首页</a></li>
+
+              <li><a href="/ARRIE.html#about" class="nav-link">关于</a></li>
+
+              <li><a href="/ARRIE.html#resume" class="nav-link">简历</a></li>
+
+              <li><a href="/ARRIE.html#portfolio" class="nav-link">作品</a></li>
+
             </ul>
+
           </nav>
+
         </div>
+
         <div class="mt-5 mb-7">
+
           <ul class="list-unstyled d-flex justify-content-start flex-nowrap gap-3 mb-3">
+
             <li>
+
               <a class="text-dark" id="phone-icon" href="tel:17793663019">
+
                 <img src="/images/电话.png" width="20" height="20" alt="电话">
+
               </a>
+
             </li>
+
             <li>
+
               <a class="text-dark" id="wechat-icon" href="weixin://search/17793663019">
+
                 <img src="/images/微信.png" width="20" height="20" alt="微信">
+
               </a>
+
             </li>
+
             <li>
+
               <a class="text-dark" id="email-icon" href="mailto:3613677416@qq.com">
+
                 <img src="/images/邮箱.png" width="20" height="20" alt="邮箱">
+
               </a>
+
             </li>
+
           </ul>
+
           <div class="py-2 border-top border-bottom">
+
             <p class="m-0 py-1">
+
               <a class="py-1 d-flex flex-nowrap text-decoration-none" id="tw-link" style="color: inherit; white-space: nowrap; flex-shrink: 1;">
+
                 <span style="font-weight: 500;">T/W:</span>177 9366 3019
+
               </a>
+
             </p>
+
           </div>
+
           <div class="email-links py-2 mb-4">
+
             <div class="py-1 d-flex flex-nowrap" id="email-link" style="flex-shrink: 1;"><span style="font-weight: 500;">E:</span>3613677416@qq.com</div>
+
           </div>
+
           
+
           <script>
+
             document.addEventListener('DOMContentLoaded', function() {
+
               const phoneIcon = document.getElementById('phone-icon');
+
               const wechatIcon = document.getElementById('wechat-icon');
+
               const emailIcon = document.getElementById('email-icon');
+
               const twLink = document.getElementById('tw-link');
+
               const emailLink = document.getElementById('email-link');
+
               
+
               function isMobileDevice() {
+
                 return (typeof window.orientation !== 'undefined') || (navigator.userAgent.indexOf('IEMobile') !== -1);
+
               }
+
               
+
               phoneIcon.addEventListener('click', function(e) {
+
                 if (!isMobileDevice()) {
+
                   e.preventDefault();
+
                   alert('请用手机拨打');
+
                 }
+
               }
+
               
+
               [phoneIcon, wechatIcon, emailIcon].forEach(icon => {
+
                 icon.style.transition = 'transform 0.3s ease-out';
+
                 icon.style.display = 'inline-block';
+
                 
+
                 icon.addEventListener('mouseenter', function() {
+
                   this.style.transform = 'scale(1.2)';
+
                 });
+
                 
+
                 icon.addEventListener('mouseleave', function() {
+
                   this.style.transform = 'scale(1)';
+
                 });
+
               });
+
               
+
               twLink.style.cursor = 'default';
+
               twLink.addEventListener('mouseenter', function() {
+
                 phoneIcon.style.transform = 'scale(1.2)';
+
                 wechatIcon.style.transform = 'scale(1.2)';
+
               });
+
               twLink.addEventListener('mouseleave', function() {
+
                 phoneIcon.style.transform = 'scale(1)';
+
                 wechatIcon.style.transform = 'scale(1)';
+
               });
+
               
+
               emailLink.style.cursor = 'default';
+
               emailLink.addEventListener('mouseenter', function() {
+
                 emailIcon.style.transform = 'scale(1.2)';
+
               });
+
               emailLink.addEventListener('mouseleave', function() {
+
                 emailIcon.style.transform = 'scale(1)';
+
               });
+
               
+
               const navLinks = document.querySelectorAll('.nav-link');
+
               navLinks.forEach(link => {
+
                 link.style.transition = 'transform 0.3s ease-out, font-weight 0.3s ease-out';
+
                 
+
                 link.addEventListener('mouseenter', function() {
+
                   this.style.transform = 'scale(1.05)';
+
                   this.style.fontWeight = '700';
+
                 });
+
                 
+
                 link.addEventListener('mouseleave', function() {
+
                   this.style.transform = 'scale(1)';
+
                   this.style.fontWeight = '400';
+
                 });
+
               });
+
             });
+
             
 
+
+
             };
+
             setTimeout(function() {
+
               window.scrollTo(0, 0);
+
             }, 100);
+
           </script>
+
         </div>
+
       </div>
+
     </header>
 
+
+
     <main class="col-lg-10 offset-lg-2 p-5">
+
       <section id="article-detail" class="my-5 py-5">
+
         <div class="section-header my-5" data-aos="fade-up">
+
                   <h1 class="display-4" style="font-size: 2rem; margin-bottom: 3.5rem;">2023西湖峰会宣传——风景篇</h1>
+
                 </div>
 
+
+
         <div class="article-content" data-aos="fade-up">
+
           <div class="row mb-8">
+
             <div class="col-lg-12">
+
               <div class="article-body" style="text-align: center; font-size: 1.1rem;">
+
 <div style="position: relative; width: 100%;">
-            <video id="main-video" controls preload="auto" poster="/作品?3.视频/2.活动宣发\4.2023西湖峰会宣传——风景篇\2023西湖峰会——风景篇.png" class="img-fluid mb-4" style="width: 100%;">
-              <source src="/作品?3.视频/2.活动宣发\4.2023西湖峰会宣传——风景篇\2023西湖峰会宣传——风景篇.mp4" type="video/mp4">
+
+            <video id="main-video" controls preload="auto" poster="/作品集/3.视频/2.活动宣发\4.2023西湖峰会宣传——风景篇\2023西湖峰会——风景篇.png" class="img-fluid mb-4" style="width: 100%;">
+
+              <source src="/作品集/3.视频/2.活动宣发\4.2023西湖峰会宣传——风景篇\2023西湖峰会宣传——风景篇.mp4" type="video/mp4">
+
             </video>
+
             <div id="play-button" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100px; height: 100px; background-color: rgba(0,0,0,0.5); border-radius: 50%; display: flex; align-items: center; justify-content: center; z-index: 10; pointer-events: none;">
+
               <div style="width: 0; height: 0; border-left: 40px solid white; border-top: 25px solid transparent; border-bottom: 25px solid transparent; margin-left: 10px;"></div>
+
             <script>
+
               var video = document.getElementById('main-video');
+
               var playButton = document.getElementById('play-button');
+
               
+
               video.addEventListener('play', function() {
+
                 playButton.style.display = 'none';
+
               });
+
               
+
               video.addEventListener('pause', function() {
+
                 playButton.style.display = 'flex';
+
               });
+
             </script>
+
             </div>
+
           </div>
+
           <script>
+
             document.addEventListener('DOMContentLoaded', function() {
+
               const phoneIcon = document.getElementById('phone-icon');
+
               const wechatIcon = document.getElementById('wechat-icon');
+
               const emailIcon = document.getElementById('email-icon');
+
               const twLink = document.getElementById('tw-link');
+
               const emailLink = document.getElementById('email-link');
+
               
+
               function isMobileDevice() {
+
                 return (typeof window.orientation !== 'undefined') || (navigator.userAgent.indexOf('IEMobile') !== -1);
+
               }
+
               
+
               phoneIcon.addEventListener('click', function(e) {
+
                 if (!isMobileDevice()) {
+
                   e.preventDefault();
+
                   alert('请用手机拨打');
+
                 }
+
               }
+
               
+
               [phoneIcon, wechatIcon, emailIcon].forEach(icon => {
+
                 icon.style.transition = 'transform 0.3s ease-out';
+
                 icon.style.display = 'inline-block';
+
                 
+
                 icon.addEventListener('mouseenter', function() {
+
                   this.style.transform = 'scale(1.2)';
+
                 });
+
                 
+
                 icon.addEventListener('mouseleave', function() {
+
                   this.style.transform = 'scale(1)';
+
                 });
+
               });
+
               
+
               twLink.style.cursor = 'default';
+
               twLink.addEventListener('mouseenter', function() {
+
                 phoneIcon.style.transform = 'scale(1.2)';
+
                 wechatIcon.style.transform = 'scale(1.2)';
+
               });
+
               twLink.addEventListener('mouseleave', function() {
+
                 phoneIcon.style.transform = 'scale(1)';
+
                 wechatIcon.style.transform = 'scale(1)';
+
               });
+
               
+
               emailLink.style.cursor = 'default';
+
               emailLink.addEventListener('mouseenter', function() {
+
                 emailIcon.style.transform = 'scale(1.2)';
+
               });
+
               emailLink.addEventListener('mouseleave', function() {
+
                 emailIcon.style.transform = 'scale(1)';
+
               });
+
               
+
               const navLinks = document.querySelectorAll('.nav-link');
+
               navLinks.forEach(link => {
+
                 link.style.transition = 'transform 0.3s ease-out, font-weight 0.3s ease-out';
+
                 
+
                 link.addEventListener('mouseenter', function() {
+
                   this.style.transform = 'scale(1.05)';
+
                   this.style.fontWeight = '700';
+
                 });
+
                 
+
                 link.addEventListener('mouseleave', function() {
+
                   this.style.transform = 'scale(1)';
+
                   this.style.fontWeight = '400';
+
                 });
+
               });
+
             });
+
             
 
+
+
             };
+
             setTimeout(function() {
+
               window.scrollTo(0, 0);
+
             }, 100);
+
           </script>
+
           <br>
+
           <br>
-还记得我们每?月的约定?br>
-江南?风景旧曾?br>
-江南?最忆是杭州<br>
-聚汽网主?br>
-大变局新征程?023年第六届汽后西湖峰会<br>
-8?7-19日如期而至<br>
+
+还记得我们每年8月的约定吗<br>
+
+江南好 风景旧曾谙<br>
+
+江南忆 最忆是杭州<br>
+
+聚汽网主办<br>
+
+大变局新征程·2023年第六届汽后西湖峰会<br>
+
+8月17-19日如期而至<br>
+
 这是我们一年一度的杭州之约<br>
+
 <br>
-在这盛夏8?br>
-不可错过?除了西湖峰会<br>
-便只有杭州美景和?br>
+
+在这盛夏8月<br>
+
+不可错过的 除了西湖峰会<br>
+
+便只有杭州美景和你<br>
+
 <br>
+
 期待和您<br>
-驾一叶扁?br>
+
+驾一叶扁舟<br>
+
 荡漾西湖<br>
+
 遥望雷锋宝塔<br>
+
 漫步云栖竹径<br>
+
 行至宋城<br>
+
 参拜灵隐<br>
-于飞来峰?感念文公<br>
-越王庙中 怀到武?br>
+
+于飞来峰上 感念文公<br>
+
+越王庙中 怀到武穆<br>
+
 <br>
+
 或者探秘江南影视城<br>
+
 体验影视拍摄<br>
+
 梦回明清园林<br>
+
 尝遍城中真味<br>
+
 亦或徜徉西溪湿地公园<br>
+
 置身广阔森林湖泊<br>
+
 观览众多林中小鸟<br>
+
 体悟万物交融的和谐与自由<br>
-又或?提前参观亚运场馆<br>
-在科技与文化交融的宏伟建筑?br>
-提前体验赛事激?br>
+
+又或者 提前参观亚运场馆<br>
+
+在科技与文化交融的宏伟建筑里<br>
+
+提前体验赛事激情<br>
+
 近距离感受亚运氛围和魅力<br>
+
 <br>
-本次西湖峰会的活动场?br>
-塘栖古镇更不能错?br>
+
+本次西湖峰会的活动场地<br>
+
+塘栖古镇更不能错过<br>
+
 不妨走上水北老街<br>
+
 漫步于诗词意境般的烟柳画桥和枫林翠木<br>
-穿过广济?br>
+
+穿过广济桥<br>
+
 顺京杭大运河漂流而下<br>
-感受古代水运的繁忙气?br>
-在古今交融的暖风里尽情陶?br>
+
+感受古代水运的繁忙气息<br>
+
+在古今交融的暖风里尽情陶醉<br>
+
 <br>
+
 最是一年好景时<br>
+
 8月杭州来相聚<br>
-一场心灵与灵魂的洗?br>
-一场智慧和实力的升?br>
+
+一场心灵与灵魂的洗礼<br>
+
+一场智慧和实力的升华<br>
+
 <br>
-8?7-19?br>
-我们在塘栖古?br>
+
+8月17-19日<br>
+
+我们在塘栖古镇<br>
+
 美丽相约
+
               </div>
+
             </div>
+
           </div>
+
         </div>
+
       </section>
+
       
+
       <div class="fixed-return-btn">
+
         <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" class="btn btn-dark">回到顶部</a>
+
       </div>
+
     </main>
+
   </div>
 
+
+
   <script src="/js/jquery-1.11.0.min.js"></script>
+
   <script src="/js/plugins.js"></script>
+
   <script src="/js/script.js"></script>
+
   <script src="/js/bootstrap.bundle.min.js"></script>
+
   <script src="/js/aos.js"></script>
+
   <script>
+
   
+
   <script>
+
     // 视频播放控制
+
     var videos = document.querySelectorAll('video');
+
     var playButtons = document.querySelectorAll('[id^="play-button"]');
+
     
+
     videos.forEach(function(video, index) {
+
       var playButton = playButtons[index];
+
       if (playButton) {
+
         video.addEventListener('play', function() {
+
           playButton.style.display = 'none';
+
         });
+
         
+
         video.addEventListener('pause', function() {
+
           playButton.style.display = 'flex';
+
         });
+
       }
+
     });
+
   </script>
+
 </html>

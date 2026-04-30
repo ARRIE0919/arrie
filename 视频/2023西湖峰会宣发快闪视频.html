@@ -1,354 +1,707 @@
 <!DOCTYPE html>
+
 <html lang="zh-CN">
 
+
+
 <head>
-  <title>2023西湖峰会宣发快闪视频 | 税展?/title>
+
+  <title>2023西湖峰会宣发快闪视频 | 税展伟</title>
+
   <meta charset="utf-8">
+
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <meta name="format-detection" content="telephone=no">
+
   <meta name="apple-mobile-web-app-capable" content="yes">
+
   <meta name="author" content="">
+
   <meta name="keywords" content="">
+
   <meta name="description" content="">
+
   <link rel="stylesheet" type="text/css" href="/css/vendor.css">
+
   <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.1/css/bootstrap.min.css" rel="stylesheet">
+
   <link rel="stylesheet" type="text/css" href="/style.css">
+
   <style>
+
     .table-responsive {
+
       overflow-x: auto;
+
       -webkit-overflow-scrolling: touch;
+
       max-width: 100%;
+
     }
+
   </style>
+
 </head>
 
+
+
 <body class="bg-body article-page" data-bs-spy="scroll" data-bs-target="#header-nav" tabindex="0">
+
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+
     <defs>
+
     </defs>
+
   </svg>
+
+
 
   <a class="menu-btn"><span></span></a>
 
+
+
   <div class="container-fluid overflow-hidden">
+
     <header id="header-nav" class="col-lg-2 position-fixed px-5 bg-white h-100">
+
       <div class="header-wrap d-flex flex-column justify-content-between h-100">
+
         <div class="navigation">
+
           <div class="site-logo mt-5">
+
               <img src="/images/main-logo.png" alt="logo" class="img-fluid">
+
           </div>
+
+
 
           <nav id="one-page-menu" class="vertical-menu my-5">
+
             <ul class="menu-list list-unstyled">
-              <li><a href="../ARRIE.html#home" class="nav-link">首页</a></li>
-              <li><a href="../ARRIE.html#about" class="nav-link">关于</a></li>
-              <li><a href="../ARRIE.html#resume" class="nav-link">简?/a></li>
-              <li><a href="../ARRIE.html#portfolio" class="nav-link">作品</a></li>
+
+              <li><a href="/ARRIE.html#home" class="nav-link">首页</a></li>
+
+              <li><a href="/ARRIE.html#about" class="nav-link">关于</a></li>
+
+              <li><a href="/ARRIE.html#resume" class="nav-link">简历</a></li>
+
+              <li><a href="/ARRIE.html#portfolio" class="nav-link">作品</a></li>
+
             </ul>
+
           </nav>
+
         </div>
+
         <div class="mt-5 mb-7">
+
           <ul class="list-unstyled d-flex justify-content-start flex-nowrap gap-3 mb-3">
+
             <li>
+
               <a class="text-dark" id="phone-icon" href="tel:17793663019">
+
                 <img src="/images/电话.png" width="20" height="20" alt="电话">
+
               </a>
+
             </li>
+
             <li>
+
               <a class="text-dark" id="wechat-icon" href="weixin://search/17793663019">
+
                 <img src="/images/微信.png" width="20" height="20" alt="微信">
+
               </a>
+
             </li>
+
             <li>
+
               <a class="text-dark" id="email-icon" href="mailto:3613677416@qq.com">
+
                 <img src="/images/邮箱.png" width="20" height="20" alt="邮箱">
+
               </a>
+
             </li>
+
           </ul>
+
           <div class="py-2 border-top border-bottom">
+
             <p class="m-0 py-1">
+
               <a class="py-1 d-flex flex-nowrap text-decoration-none" id="tw-link" style="color: inherit; white-space: nowrap; flex-shrink: 1;">
+
                 <span style="font-weight: 500;">T/W:</span>177 9366 3019
+
               </a>
+
             </p>
+
           </div>
+
           <div class="email-links py-2 mb-4">
+
             <div class="py-1 d-flex flex-nowrap" id="email-link" style="flex-shrink: 1;"><span style="font-weight: 500;">E:</span>3613677416@qq.com</div>
+
           </div>
+
+
 
           <script>
+
             document.addEventListener('DOMContentLoaded', function() {
+
               const phoneIcon = document.getElementById('phone-icon');
+
               const wechatIcon = document.getElementById('wechat-icon');
+
               const emailIcon = document.getElementById('email-icon');
+
               const twLink = document.getElementById('tw-link');
+
               const emailLink = document.getElementById('email-link');
 
+
+
               function isMobileDevice() {
+
                 return (typeof window.orientation !== 'undefined') || (navigator.userAgent.indexOf('IEMobile') !== -1);
+
               }
 
+
+
               phoneIcon.addEventListener('click', function(e) {
+
                 if (!isMobileDevice()) {
+
                   e.preventDefault();
+
                   alert('请用手机拨打');
+
                 }
+
               });
+
+
 
               [phoneIcon, wechatIcon, emailIcon].forEach(icon => {
+
                 icon.style.transition = 'transform 0.3s ease-out';
+
                 icon.style.display = 'inline-block';
 
+
+
                 icon.addEventListener('mouseenter', function() {
+
                   this.style.transform = 'scale(1.2)';
+
                 });
+
+
 
                 icon.addEventListener('mouseleave', function() {
+
                   this.style.transform = 'scale(1)';
+
                 });
+
               });
+
+
 
               twLink.style.cursor = 'default';
+
               twLink.addEventListener('mouseenter', function() {
+
                 phoneIcon.style.transform = 'scale(1.2)';
+
                 wechatIcon.style.transform = 'scale(1.2)';
+
               });
+
               twLink.addEventListener('mouseleave', function() {
+
                 phoneIcon.style.transform = 'scale(1)';
+
                 wechatIcon.style.transform = 'scale(1)';
+
               });
+
+
 
               emailLink.style.cursor = 'default';
+
               emailLink.addEventListener('mouseenter', function() {
+
                 emailIcon.style.transform = 'scale(1.2)';
+
               });
+
               emailLink.addEventListener('mouseleave', function() {
+
                 emailIcon.style.transform = 'scale(1)';
+
               });
+
+
 
               const navLinks = document.querySelectorAll('.nav-link');
+
               navLinks.forEach(link => {
+
                 link.style.transition = 'transform 0.3s ease-out, font-weight 0.3s ease-out';
 
+
+
                 link.addEventListener('mouseenter', function() {
+
                   this.style.transform = 'scale(1.05)';
+
                   this.style.fontWeight = '700';
+
                 });
 
+
+
                 link.addEventListener('mouseleave', function() {
+
                   this.style.transform = 'scale(1)';
+
                   this.style.fontWeight = '400';
+
                 });
+
               });
+
             });
+
+
+
 
 
             window.scrollTo(0, 0);
+
             document.addEventListener('DOMContentLoaded', function() {
+
               window.scrollTo(0, 0);
+
             });
+
             window.onload = function() {
+
               window.scrollTo(0, 0);
+
             };
+
             setTimeout(function() {
+
               window.scrollTo(0, 0);
+
             }, 100);
+
           </script>
+
         </div>
+
       </div>
+
     </header>
 
+
+
     <main class="col-lg-10 offset-lg-2 p-5">
+
       <section id="article-detail" class="my-5 py-5">
+
         <div class="section-header my-5" data-aos="fade-up">
+
                   <h1 class="display-4" style="font-size: 2rem; margin-bottom: 3.5rem;">2023西湖峰会宣发快闪视频</h1>
+
                 </div>
 
+
+
         <div class="article-content" data-aos="fade-up">
+
           <div class="row mb-8">
+
             <div class="col-lg-12">
+
               <div class="article-body" style="text-align: center; font-size: 1.1rem;">
+
 <div style="position: relative; width: 100%;">
-            <video id="main-video" controls preload="auto" poster="/作品?3.视频/2.活动宣发/1.2023西湖峰会宣发快闪视频/2023西湖峰会宣发快闪视频.png" class="img-fluid mb-4" style="width: 100%;">
-              <source src="/作品?3.视频/2.活动宣发/1.2023西湖峰会宣发快闪视频/2023西湖峰会宣传——总览?mp4" type="video/mp4">
+
+            <video id="main-video" controls preload="auto" poster="/作品集/3.视频/2.活动宣发/1.2023西湖峰会宣发快闪视频/2023西湖峰会宣发快闪视频.png" class="img-fluid mb-4" style="width: 100%;">
+
+              <source src="/作品集/3.视频/2.活动宣发/1.2023西湖峰会宣发快闪视频/2023西湖峰会宣传——总览篇.mp4" type="video/mp4">
+
             </video>
+
             <div id="play-button" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100px; height: 100px; background-color: rgba(0,0,0,0.5); border-radius: 50%; display: flex; align-items: center; justify-content: center; z-index: 10; pointer-events: none;">
+
               <div style="width: 0; height: 0; border-left: 40px solid white; border-top: 25px solid transparent; border-bottom: 25px solid transparent; margin-left: 10px;"></div>
+
             <script>
+
               var video = document.getElementById('main-video');
+
               var playButton = document.getElementById('play-button');
+
               
+
               video.addEventListener('play', function() {
+
                 playButton.style.display = 'none';
+
               });
+
               
+
               video.addEventListener('pause', function() {
+
                 playButton.style.display = 'flex';
+
               });
+
             </script>
+
             </div>
+
           </div>
+
           <script>
+
             document.addEventListener('DOMContentLoaded', function() {
+
               const phoneIcon = document.getElementById('phone-icon');
+
               const wechatIcon = document.getElementById('wechat-icon');
+
               const emailIcon = document.getElementById('email-icon');
+
               const twLink = document.getElementById('tw-link');
+
               const emailLink = document.getElementById('email-link');
 
+
+
               function isMobileDevice() {
+
                 return (typeof window.orientation !== 'undefined') || (navigator.userAgent.indexOf('IEMobile') !== -1);
+
               }
 
+
+
               phoneIcon.addEventListener('click', function(e) {
+
                 if (!isMobileDevice()) {
+
                   e.preventDefault();
+
                   alert('请用手机拨打');
+
                 }
+
               });
+
+
 
               [phoneIcon, wechatIcon, emailIcon].forEach(icon => {
+
                 icon.style.transition = 'transform 0.3s ease-out';
+
                 icon.style.display = 'inline-block';
 
+
+
                 icon.addEventListener('mouseenter', function() {
+
                   this.style.transform = 'scale(1.2)';
+
                 });
+
+
 
                 icon.addEventListener('mouseleave', function() {
+
                   this.style.transform = 'scale(1)';
+
                 });
+
               });
+
+
 
               twLink.style.cursor = 'default';
+
               twLink.addEventListener('mouseenter', function() {
+
                 phoneIcon.style.transform = 'scale(1.2)';
+
                 wechatIcon.style.transform = 'scale(1.2)';
+
               });
+
               twLink.addEventListener('mouseleave', function() {
+
                 phoneIcon.style.transform = 'scale(1)';
+
                 wechatIcon.style.transform = 'scale(1)';
+
               });
+
+
 
               emailLink.style.cursor = 'default';
+
               emailLink.addEventListener('mouseenter', function() {
+
                 emailIcon.style.transform = 'scale(1.2)';
+
               });
+
               emailLink.addEventListener('mouseleave', function() {
+
                 emailIcon.style.transform = 'scale(1)';
+
               });
+
+
 
               const navLinks = document.querySelectorAll('.nav-link');
+
               navLinks.forEach(link => {
+
                 link.style.transition = 'transform 0.3s ease-out, font-weight 0.3s ease-out';
 
+
+
                 link.addEventListener('mouseenter', function() {
+
                   this.style.transform = 'scale(1.05)';
+
                   this.style.fontWeight = '700';
+
                 });
 
+
+
                 link.addEventListener('mouseleave', function() {
+
                   this.style.transform = 'scale(1)';
+
                   this.style.fontWeight = '400';
+
                 });
+
               });
+
             });
+
+
+
 
 
             window.scrollTo(0, 0);
+
             document.addEventListener('DOMContentLoaded', function() {
+
               window.scrollTo(0, 0);
+
             });
+
             window.onload = function() {
+
               window.scrollTo(0, 0);
+
             };
+
             setTimeout(function() {
+
               window.scrollTo(0, 0);
+
             }, 100);
+
           </script>
+
           <br>
+
           <br>
-<p>2023年第6届汽后西湖峰?/p>
+
+<p>2023年第6届汽后西湖峰会</p>
+
 <p>中国 ·杭州</p>
+
 <p>汽后行业盛会</p>
+
 <p>汇聚行业精英</p>
+
 <p>顶尖智慧碰撞</p>
+
 <br>
-<p>2023?/p>
+
+<p>2023年</p>
+
 <p>消费降级</p>
+
 <p>行业内卷</p>
-<p>汽车新四?/p>
-<p>新能源崛?/p>
+
+<p>汽车新四化</p>
+
+<p>新能源崛起</p>
+
 <p>兴趣电商涌现兴起</p>
+
 <p>低碳产业浪潮强势</p>
+
 <p>市场变幻莫测</p>
-<p>技术日新月?/p>
+
+<p>技术日新月异</p>
+
 <br>
-<p>大变局 ·新征?/p>
-<p>聚汽?/p>
-<p>?6届汽后西湖峰?/p>
+
+<p>大变局 ·新征程</p>
+
+<p>聚汽网</p>
+
+<p>第 6届汽后西湖峰会</p>
+
 <p>顺势震撼而来</p>
+
 <br>
-<p>1场千人峰?/p>
-<p>4场主题峰?/p>
-<p>1场年度颁奖盛?/p>
-<p>3场企业游?/p>
-<p>?40场精妙绝伦主题演?/p>
-<p>30大热点议题深度探?/p>
-<p>6场高端智慧圆?/p>
+
+<p>1场千人峰会</p>
+
+<p>4场主题峰会</p>
+
+<p>1场年度颁奖盛典</p>
+
+<p>3场企业游学</p>
+
+<p>超 40场精妙绝伦主题演讲</p>
+
+<p>30大热点议题深度探讨</p>
+
+<p>6场高端智慧圆桌</p>
+
 <p>高端呈现</p>
+
 <br>
-<p>100+协会领导和分享嘉?/p>
+
+<p>100+协会领导和分享嘉宾</p>
+
 <p>200+国内外名优品牌商</p>
-<p>400+渠道供应?/p>
+
+<p>400+渠道供应链</p>
+
 <p>300+优质终端汽修连锁</p>
-<p>200+数据、软件、金融、资本、仓配物流等服务?/p>
+
+<p>200+数据、软件、金融、资本、仓配物流等服务商</p>
+
 <p>重磅登场</p>
+
 <br>
-<p>聚智聚慧聚西?/p>
-<p>融创融新融世?/p>
-<p>与全国汽后行业精?/p>
+
+<p>聚智聚慧聚西湖</p>
+
+<p>融创融新融世界</p>
+
+<p>与全国汽后行业精英</p>
+
 <p>共探产业大变局之下的发展新路径</p>
+
 <br>
-<p>8?7-19?/p>
+
+<p>8月17-19日</p>
+
 <p>与您相约</p>
+
 <p>塘栖古镇</p>
+
               </div>
+
             </div>
+
           </div>
+
         </div>
+
       </section>
 
+
+
       <div class="fixed-return-btn">
+
         <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" class="btn btn-dark">回到顶部</a>
+
       </div>
+
     </main>
+
   </div>
 
+
+
   <script src="/js/jquery-1.11.0.min.js"></script>
+
   <script src="/js/plugins.js"></script>
+
   <script src="/js/script.js"></script>
+
   <script src="/js/bootstrap.bundle.min.js"></script>
+
   <script src="/js/aos.js"></script>
+
   <script>
+
   
+
   <script>
+
     // 视频播放控制
+
     var videos = document.querySelectorAll('video');
+
     var playButtons = document.querySelectorAll('[id^="play-button"]');
+
     
+
     videos.forEach(function(video, index) {
+
       var playButton = playButtons[index];
+
       if (playButton) {
+
         video.addEventListener('play', function() {
+
           playButton.style.display = 'none';
+
         });
+
         
+
         video.addEventListener('pause', function() {
+
           playButton.style.display = 'flex';
+
         });
+
       }
+
     });
+
   </script>
+
 </html>

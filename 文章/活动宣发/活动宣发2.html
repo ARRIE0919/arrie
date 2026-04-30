@@ -1,450 +1,900 @@
 
+
 <!DOCTYPE html>
+
 <html lang="zh-CN">
 
+
+
 <head>
-  <title>世界本就如此美好 | 税展?/title>
+
+  <title>世界本就如此美好 | 税展伟</title>
+
   <meta charset="utf-8">
+
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <meta name="format-detection" content="telephone=no">
+
   <meta name="apple-mobile-web-app-capable" content="yes">
+
   <meta name="author" content="">
+
   <meta name="keywords" content="">
+
   <meta name="description" content="">
-  <link rel="stylesheet" type="text/css" href="../../css/vendor.css">
-  <link href="/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="../../style.css">
+
+  <link rel="stylesheet" type="text/css" href="/../css/vendor.css">
+
+  <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="/../style.css">
+
   <style>
-    /* 表格响应式处?- 适用于所有屏幕尺?*/
+
+    /* 表格响应式处理 - 适用于所有屏幕尺寸 */
+
     .table-responsive {
+
       overflow-x: auto !important;
+
       -webkit-overflow-scrolling: touch;
+
       -ms-overflow-style: -ms-autohiding-scrollbar;
+
       width: 100% !important;
+
       min-width: 0 !important;
+
     }
+
     
+
     table.table-bordered {
+
       font-size: 11px;
+
       word-break: break-word;
+
       table-layout: auto !important;
+
       width: 100% !important;
+
       min-width: 0 !important;
+
       border-collapse: collapse !important;
+
     }
+
     
+
     table.table-bordered td {
+
       padding: 8px;
+
       word-break: break-word;
+
       white-space: normal !important;
+
       min-width: 0 !important;
+
       max-width: 100% !important;
+
       box-sizing: border-box !important;
+
     }
+
     
-    /* 针对小屏幕的进一步优?*/
+
+    /* 针对小屏幕的进一步优化 */
+
     @media (max-width: 600px) {
+
       table.table-bordered {
+
         font-size: 10px;
+
       }
+
       table.table-bordered td {
+
         padding: 6px;
+
       }
+
     }
+
     
-    /* 针对极窄屏幕的优?*/
+
+    /* 针对极窄屏幕的优化 */
+
     @media (max-width: 300px) {
+
       table.table-bordered {
+
         font-size: 8px !important;
+
       }
+
       table.table-bordered td {
+
         padding: 2px !important;
+
       }
+
     }
+
     
-    /* 针对超窄屏幕的极限优?*/
+
+    /* 针对超窄屏幕的极限优化 */
+
     @media (max-width: 250px) {
+
       table.table-bordered {
+
         font-size: 7px !important;
+
       }
+
       table.table-bordered td {
+
         padding: 1px !important;
+
       }
+
     }
+
     
-    /* 表格响应式优?- 适用于所有小屏幕 */
+
+    /* 表格响应式优化 - 适用于所有小屏幕 */
+
     .table-responsive {
+
       overflow-x: auto !important;
+
       -webkit-overflow-scrolling: touch;
+
       max-width: 100%;
+
     }
+
     
+
     /* 屏幕宽度小于 768px */
+
     @media (max-width: 768px) {
+
       .table-responsive table {
+
         font-size: 10px !important;
+
         table-layout: fixed;
+
       }
+
       .table-responsive td,
+
       .table-responsive th {
+
         padding: 6px 4px !important;
+
         word-break: break-word !important;
+
         overflow-wrap: break-word !important;
+
         min-width: 60px;
+
       }
+
     }
+
     
+
     /* 屏幕宽度小于 576px */
+
     @media (max-width: 576px) {
+
       .table-responsive table {
+
         font-size: 9px !important;
+
       }
+
       .table-responsive td,
+
       .table-responsive th {
+
         padding: 4px 3px !important;
+
         min-width: 50px;
+
       }
+
     }
+
     
+
     /* 屏幕宽度小于 412px */
+
     @media (max-width: 412px) {
+
       .table-responsive table {
+
         font-size: 8px !important;
+
       }
+
       .table-responsive td,
+
       .table-responsive th {
+
         padding: 3px 2px !important;
+
         min-width: 40px;
+
       }
+
     }
+
     
+
     /* 屏幕宽度小于 350px */
+
     @media (max-width: 350px) {
+
       .table-responsive table {
+
         font-size: 7px !important;
+
       }
+
       .table-responsive td,
+
       .table-responsive th {
+
         padding: 2px 1px !important;
+
         min-width: 35px;
+
         line-height: 1.2;
+
       }
+
     }
+
     
+
     /* 屏幕宽度小于 280px */
+
     @media (max-width: 280px) {
+
       .table-responsive table {
+
         font-size: 6px !important;
+
       }
+
       .table-responsive td,
+
       .table-responsive th {
+
         padding: 2px 1px !important;
+
         min-width: 30px;
+
         line-height: 1.1;
+
       }
+
     }
+
     
+
     /* 屏幕宽度小于 200px */
+
     @media (max-width: 200px) {
+
       .table-responsive table {
+
         font-size: 5px !important;
+
       }
+
       .table-responsive td,
+
       .table-responsive th {
+
         padding: 1px !important;
+
         min-width: 25px;
+
         line-height: 1;
+
       }
+
     }
+
   </style>
+
+
 
 </head>
 
+
+
 <body class="bg-body article-page" data-bs-spy="scroll" data-bs-target="#header-nav" tabindex="0">
+
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+
     <defs>
+
     </defs>
+
   </svg>
+
+
 
   <a class="menu-btn"><span></span></a>
 
+
+
   <div class="container-fluid overflow-hidden">
+
     <header id="header-nav" class="col-lg-2 position-fixed px-5 bg-white h-100">
+
       <div class="header-wrap d-flex flex-column justify-content-between h-100">
+
         <div class="navigation">
+
           <div class="site-logo mt-5">
+
               <img src="/../images/main-logo.png" alt="logo" class="img-fluid">
+
           </div>
+
+
 
           <nav id="one-page-menu" class="vertical-menu my-5">
+
             <ul class="menu-list list-unstyled">
-              <li><a href="..//index.html#home" class="nav-link">首页</a></li>
-              <li><a href="..//index.html#about" class="nav-link">关于</a></li>
-              <li><a href="..//index.html#resume" class="nav-link">简?/a></li>
-              <li><a href="../..//index.html#portfolio" class="nav-link">作品</a></li>
+
+              <li><a href="/../ARRIE.html#home" class="nav-link">首页</a></li>
+
+              <li><a href="/../ARRIE.html#about" class="nav-link">关于</a></li>
+
+              <li><a href="/../ARRIE.html#resume" class="nav-link">简历</a></li>
+
+              <li><a href="/../../ARRIE.html#portfolio" class="nav-link">作品</a></li>
+
+
 
             </ul>
+
           </nav>
+
         </div>
+
         <div class="mt-5 mb-7">
+
           <ul class="list-unstyled d-flex justify-content-start flex-nowrap gap-3 mb-3">
+
             <li>
+
               <a class="text-dark" id="phone-icon" href="tel:17793663019">
+
                 <img src="/../images/电话.png" width="20" height="20" alt="电话">
+
               </a>
-            </li>
-            <li>
-              <a class="text-dark" id="wechat-icon" href="weixin://search/17793663019">
-                <img src="/../images/微信.png" width="20" height="20" alt="微信">
-              </a>
-            </li>
-            <li>
-              <a class="text-dark" id="email-icon" href="mailto:3613677416@qq.com">
-                <img src="/../images/邮箱.png" width="20" height="20" alt="邮箱">
-              </a>
+
             </li>
 
-          </ul>
-          <div class="py-2 border-top border-bottom">
-            <p class="m-0 py-1">
-              <a class="py-1 d-flex flex-nowrap text-decoration-none" id="tw-link" style="color: inherit; white-space: nowrap; flex-shrink: 1;">
-                <span style="font-weight: 500;">T/W:</span>177 9366 3019
+            <li>
+
+              <a class="text-dark" id="wechat-icon" href="weixin://search/17793663019">
+
+                <img src="/../images/微信.png" width="20" height="20" alt="微信">
+
               </a>
+
+            </li>
+
+            <li>
+
+              <a class="text-dark" id="email-icon" href="mailto:3613677416@qq.com">
+
+                <img src="/../images/邮箱.png" width="20" height="20" alt="邮箱">
+
+              </a>
+
+            </li>
+
+
+
+          </ul>
+
+          <div class="py-2 border-top border-bottom">
+
+            <p class="m-0 py-1">
+
+              <a class="py-1 d-flex flex-nowrap text-decoration-none" id="tw-link" style="color: inherit; white-space: nowrap; flex-shrink: 1;">
+
+                <span style="font-weight: 500;">T/W:</span>177 9366 3019
+
+              </a>
+
             </p>
+
           </div>
+
           <div class="email-links py-2 mb-4">
+
             <div class="py-1 d-flex flex-nowrap" id="email-link" style="flex-shrink: 1;"><span style="font-weight: 500;">E:</span>3613677416@qq.com</div>
+
           </div>
+
           
+
           <script>
-            // 添加鼠标悬停放大和加粗效?
+
+            // 添加鼠标悬停放大和加粗效果
+
             document.addEventListener('DOMContentLoaded', function() {
+
               // 获取元素
+
               const phoneIcon = document.getElementById('phone-icon');
+
               const wechatIcon = document.getElementById('wechat-icon');
+
               const emailIcon = document.getElementById('email-icon');
+
               const twLink = document.getElementById('tw-link');
+
               const emailLink = document.getElementById('email-link');
+
               
-              // 设备检测函?
+
+              // 设备检测函数
+
               function isMobileDevice() {
+
                 return (typeof window.orientation !== 'undefined') || (navigator.userAgent.indexOf('IEMobile') !== -1);
+
               }
+
               
-              // 为电话图标添加设备检测点击事?
+
+              // 为电话图标添加设备检测点击事件
+
               phoneIcon.addEventListener('click', function(e) {
+
                 if (!isMobileDevice()) {
+
                   e.preventDefault(); // 阻止默认行为
+
                   alert('请用手机拨打'); // 显示提示信息
+
                 }
-                // 移动设备上保持默认行?
+
+                // 移动设备上保持默认行为
+
               });
+
               
-              // 为所有图标添加悬停效果，放大并加粗图标本?
+
+              // 为所有图标添加悬停效果，放大并加粗图标本身
+
               [phoneIcon, wechatIcon, emailIcon].forEach(icon => {
+
                 // 设置初始样式
+
                 icon.style.transition = 'transform 0.3s ease-out';
+
                 icon.style.display = 'inline-block';
+
                 
+
                 // 鼠标进入事件
+
                 icon.addEventListener('mouseenter', function() {
+
                   this.style.transform = 'scale(1.2)';
+
                 });
+
                 
+
                 // 鼠标离开事件
+
                 icon.addEventListener('mouseleave', function() {
+
                   this.style.transform = 'scale(1)';
+
                 });
+
               });
+
               
+
               // 为T/W文本添加悬停效果，触发电话和微信图标放大
+
               twLink.style.cursor = 'default'; // 恢复默认光标
+
               
-              // 鼠标进入T/W文本时，放大电话和微信图?
+
+              // 鼠标进入T/W文本时，放大电话和微信图标
+
               twLink.addEventListener('mouseenter', function() {
+
                 phoneIcon.style.transform = 'scale(1.2)';
+
                 wechatIcon.style.transform = 'scale(1.2)';
+
               });
+
               
-              // 鼠标离开T/W文本时，恢复电话和微信图标大?
+
+              // 鼠标离开T/W文本时，恢复电话和微信图标大小
+
               twLink.addEventListener('mouseleave', function() {
+
                 phoneIcon.style.transform = 'scale(1)';
+
                 wechatIcon.style.transform = 'scale(1)';
+
               });
+
               
-              // 为邮箱号添加悬停效果，触发邮箱图标放?
+
+              // 为邮箱号添加悬停效果，触发邮箱图标放大
+
               emailLink.style.cursor = 'default'; // 设置默认光标
+
               
-              // 鼠标进入邮箱号时，放大邮箱图?
+
+              // 鼠标进入邮箱号时，放大邮箱图标
+
               emailLink.addEventListener('mouseenter', function() {
+
                 emailIcon.style.transform = 'scale(1.2)';
+
               });
+
               
-              // 鼠标离开邮箱号时，恢复邮箱图标大?
+
+              // 鼠标离开邮箱号时，恢复邮箱图标大小
+
               emailLink.addEventListener('mouseleave', function() {
+
                 emailIcon.style.transform = 'scale(1)';
+
               });
+
               
-              // 电话链接和邮箱地址的悬停效果已在CSS中定?
+
+              // 电话链接和邮箱地址的悬停效果已在CSS中定义
+
               
-              // 为导航标签添加悬停放大加粗效?
+
+              // 为导航标签添加悬停放大加粗效果
+
               const navLinks = document.querySelectorAll('.nav-link');
+
               navLinks.forEach(link => {
+
                 // 添加过渡效果
+
                 link.style.transition = 'transform 0.3s ease-out, font-weight 0.3s ease-out';
+
                 
+
                 // 鼠标悬停事件
+
                 link.addEventListener('mouseenter', function() {
+
                   this.style.transform = 'scale(1.05)';
+
                   this.style.fontWeight = '700';
+
                 });
+
                 
+
                 // 鼠标离开事件
+
                 link.addEventListener('mouseleave', function() {
+
                   this.style.transform = 'scale(1)';
+
                   this.style.fontWeight = '400';
+
                 });
+
               });
+
             });
+
             
+
             // 回到顶部页面
+
             
+
             // 页面加载时滚动到顶部（使用多种方法确保生效）
-            // 立即执行一?
+
+            // 立即执行一次
+
             window.scrollTo(0, 0);
+
             
-            // DOM加载完成后执?
+
+            // DOM加载完成后执行
+
             document.addEventListener('DOMContentLoaded', function() {
+
               window.scrollTo(0, 0);
+
             });
+
             
-            // 页面完全加载后执?
+
+            // 页面完全加载后执行
+
             window.onload = function() {
+
               window.scrollTo(0, 0);
+
             };
+
             
-            // 延迟执行一次，确保所有资源加载完?
+
+            // 延迟执行一次，确保所有资源加载完成
+
             setTimeout(function() {
+
               window.scrollTo(0, 0);
+
             }, 100);
+
           </script>
 
 
 
+
+
+
+
         </div>
+
       </div>
+
     </header>
 
+
+
     <main class="col-lg-10 offset-lg-2 p-5">
+
       <section id="article-detail" class="my-5 py-5">
+
         <div class="section-header my-5" data-aos="fade-up">
-                  <h1 class="display-4" style="font-size: 2rem; margin-bottom: 3.5rem;">世界本就如此美好<br>—?023年卡斯夫公益▪爱心图书馆现场捐赠活动</h1>
+
+                  <h1 class="display-4" style="font-size: 2rem; margin-bottom: 3.5rem;">世界本就如此美好<br>——2023年卡斯夫公益▪爱心图书馆现场捐赠活动</h1>
+
                 </div>
+
+
 
         <div class="article-content" data-aos="fade-up">
+
           <div class="row mb-8">
+
             <div class="col-lg-12">
+
               <!-- 文章内容 -->
+
                 <div class="article-body">
-<div class="table-responsive" style="overflow-x: auto;"><table class="table table-bordered" style="font-size: 11px; word-break: break-word;"><tbody><tr><td colspan="7" style="padding: 8px; border: 1px solid #ddd; text-align: center;"><strong>一、负责人及时?/strong></td></tr><tr><td colspan="5" style="padding: 8px; border: 1px solid #ddd; text-align: center;"><strong>内容</strong></td><td style="padding: 8px; border: 1px solid #ddd; text-align: center;"><strong>负责?/strong></td><td style="padding: 8px; border: 1px solid #ddd; text-align: center;"><strong>时间</strong></td></tr><tr><td colspan="5" style="padding: 8px; border: 1px solid #ddd; text-align: center;">整体及细节策?/td><td style="padding: 8px; border: 1px solid #ddd; text-align: center;">?/td><td style="padding: 8px; border: 1px solid #ddd; text-align: center;">08.10</td></tr><tr><td colspan="5" style="padding: 8px; border: 1px solid #ddd; text-align: center;">视频策划</td><td style="padding: 8px; border: 1px solid #ddd; text-align: center;">?/td><td style="padding: 8px; border: 1px solid #ddd; text-align: center;">08.10</td></tr><tr><td colspan="5" style="padding: 8px; border: 1px solid #ddd; text-align: center;">配音</td><td style="padding: 8px; border: 1px solid #ddd; text-align: center;">淘宝</td><td style="padding: 8px; border: 1px solid #ddd; text-align: center;">08.09</td></tr><tr><td colspan="5" style="padding: 8px; border: 1px solid #ddd; text-align: center;">卡斯夫动画形?/td><td style="padding: 8px; border: 1px solid #ddd; text-align: center;">?/td><td style="padding: 8px; border: 1px solid #ddd; text-align: center;">0.8.04?/td></tr><tr><td colspan="5" style="padding: 8px; border: 1px solid #ddd; text-align: center;">视频Ⅱ（16???分钟?/td><td style="padding: 8px; border: 1px solid #ddd; text-align: center;">?/td><td style="padding: 8px; border: 1px solid #ddd; text-align: center;">08.05?/td></tr><tr><td colspan="5" style="padding: 8px; border: 1px solid #ddd; text-align: center;">视频Ⅰ、Ⅲ?6??分钟循环5??/td><td style="padding: 8px; border: 1px solid #ddd; text-align: center;">?/td><td style="padding: 8px; border: 1px solid #ddd; text-align: center;">08.05?/td></tr><tr><td colspan="7" style="padding: 8px; border: 1px solid #ddd; text-align: center;"><strong>二、活动流程：</strong><br>
-（一）：主持人发言，同时A、B、C屏播放视频Ⅰ?分钟?br>
-（二）：A、B、C屏播放视频Ⅱ??分钟?br>
-（三）：现场募捐，同时A、C屏循环播放视频Ⅲ、B屏播放视频Ⅱ?5分钟?/td></tr><tr><td style="padding: 8px; border: 1px solid #ddd; vertical-align: middle;" rowspan="2">（一?/td><td style="padding: 8px; border: 1px solid #ddd; vertical-align: middle;" rowspan="2">主持人发言</td><td style="padding: 8px; border: 1px solid #ddd;">书香筑梦，扬帆远航。卡斯夫公益是由聚汽网发起，旨在全国建设100座爱心公益图书馆、运动室，以知识之光照亮孩子们的前行道路，以阅读之匙打开未知世界的大门。聚汽网▪卡斯夫公益将携手爱心捐助企业，不断为全国各地学生的成长和梦想插上腾飞的双翼，助力学校共同为新一代成长叩响成功之门、已成功在全国建设了5家爱心图书馆?/td><td style="padding: 8px; border: 1px solid #ddd; vertical-align: middle;" rowspan="2">视频Ⅰ文?/td><td colspan="3" style="padding: 8px; border: 1px solid #ddd;">卡斯夫爱心图书馆?
-卡斯夫NO.001图书?
-2021??2日，聚汽网牵头组织举办的卡斯夫公益·爱心图书馆捐赠活动在江西抚州展坪镇举办，携手快准车服为抚州市展坪镇中心小学捐赠价值五万余元的书籍和若干文具用品等?
-2022??4日，聚汽网▪卡斯夫公益携手快准车服再次来到展坪镇中心小学，完成了卡斯夫NO.001爱心图书馆的第二次复捐，为孩子们带来2600余册图书?00余套学习、体育用品?
-卡斯夫NO.002图书?
-2023??0日，聚汽网▪卡斯夫公益走进玉林市博白县沙河镇大观村小学，聚汽网独家出资为学校累计捐赠2000余册图书、若干LED大屏和文体用品，并携手广?4家汽车后市场爱心企业，共同为大观村小学进行了上万元现金捐助，宣告卡斯夫NO.002图书馆的揭幕?
-卡斯夫NO.003图书?
-2022??4日，聚汽网▪卡斯夫公益携手浙江安格鲁传动系统有限公司来到罗针镇初级中学，为孩子们带来图书4100余册，体育及文具510余套，宣告卡斯夫NO.003爱心图书馆正式落成?
-卡斯夫NO.004图书?
-2023??0日，聚汽网▪卡斯夫公益携手汽配峰来到清河县漓江小学，举行卡斯夫NO.004图书馆的捐赠开馆仪式，捐赠4000余册图书及若干体育文具用品，助力清河县漓江小学学生的课外阅读活动及素质教育?
-卡斯夫NO.005图书?
-2023??4日，聚汽网▪卡斯夫公益携手珠海美合科技股份有限公司来到长沙宁乡市沙田初级中学，举行了卡斯夫爱心图书馆NO.005捐赠开馆仪式，捐赠4000余册图书?000份体育文具用品?/td></tr><tr><td style="padding: 8px; border: 1px solid #ddd;">值此盛典之夜，汽车后市场成功企业家济济一堂，2023卡斯夫公益特现场发起募捐活动?
-具体方案如方式、金额、监管方式、用途和后续回执等?
-现场募捐活动将在视频结束后正式开始?/td><td colspan="3" style="padding: 8px; border: 1px solid #ddd;">卡斯夫爱心图书馆?
-卡斯夫NO.001图书?
-2021??2日，聚汽网牵头组织举办的卡斯夫公益·爱心图书馆捐赠活动在江西抚州展坪镇举办，携手快准车服为抚州市展坪镇中心小学捐赠价值五万余元的书籍和若干文具用品等?
-2022??4日，聚汽网▪卡斯夫公益携手快准车服再次来到展坪镇中心小学，完成了卡斯夫NO.001爱心图书馆的第二次复捐，为孩子们带来2600余册图书?00余套学习、体育用品?
-卡斯夫NO.002图书?
-2023??0日，聚汽网▪卡斯夫公益走进玉林市博白县沙河镇大观村小学，聚汽网独家出资为学校累计捐赠2000余册图书、若干LED大屏和文体用品，并携手广?4家汽车后市场爱心企业，共同为大观村小学进行了上万元现金捐助，宣告卡斯夫NO.002图书馆的揭幕?
-卡斯夫NO.003图书?
-2022??4日，聚汽网▪卡斯夫公益携手浙江安格鲁传动系统有限公司来到罗针镇初级中学，为孩子们带来图书4100余册，体育及文具510余套，宣告卡斯夫NO.003爱心图书馆正式落成?
-卡斯夫NO.004图书?
-2023??0日，聚汽网▪卡斯夫公益携手汽配峰来到清河县漓江小学，举行卡斯夫NO.004图书馆的捐赠开馆仪式，捐赠4000余册图书及若干体育文具用品，助力清河县漓江小学学生的课外阅读活动及素质教育?
-卡斯夫NO.005图书?
-2023??4日，聚汽网▪卡斯夫公益携手珠海美合科技股份有限公司来到长沙宁乡市沙田初级中学，举行了卡斯夫爱心图书馆NO.005捐赠开馆仪式，捐赠4000余册图书?000份体育文具用品?/td></tr><tr><td style="padding: 8px; border: 1px solid #ddd; vertical-align: middle;" rowspan="6">（二?/td><td style="padding: 8px; border: 1px solid #ddd; vertical-align: middle;" rowspan="6">视频Ⅱ文?/td><td colspan="5" style="padding: 8px; border: 1px solid #ddd;">地缘冲突持续震荡
+
+<div class="table-responsive" style="overflow-x: auto;"><table class="table table-bordered" style="font-size: 11px; word-break: break-word;"><tbody><tr><td colspan="7" style="padding: 8px; border: 1px solid #ddd; text-align: center;"><strong>一、负责人及时间</strong></td></tr><tr><td colspan="5" style="padding: 8px; border: 1px solid #ddd; text-align: center;"><strong>内容</strong></td><td style="padding: 8px; border: 1px solid #ddd; text-align: center;"><strong>负责人</strong></td><td style="padding: 8px; border: 1px solid #ddd; text-align: center;"><strong>时间</strong></td></tr><tr><td colspan="5" style="padding: 8px; border: 1px solid #ddd; text-align: center;">整体及细节策划</td><td style="padding: 8px; border: 1px solid #ddd; text-align: center;">彭</td><td style="padding: 8px; border: 1px solid #ddd; text-align: center;">08.10</td></tr><tr><td colspan="5" style="padding: 8px; border: 1px solid #ddd; text-align: center;">视频策划</td><td style="padding: 8px; border: 1px solid #ddd; text-align: center;">税</td><td style="padding: 8px; border: 1px solid #ddd; text-align: center;">08.10</td></tr><tr><td colspan="5" style="padding: 8px; border: 1px solid #ddd; text-align: center;">配音</td><td style="padding: 8px; border: 1px solid #ddd; text-align: center;">淘宝</td><td style="padding: 8px; border: 1px solid #ddd; text-align: center;">08.09</td></tr><tr><td colspan="5" style="padding: 8px; border: 1px solid #ddd; text-align: center;">卡斯夫动画形象</td><td style="padding: 8px; border: 1px solid #ddd; text-align: center;">税</td><td style="padding: 8px; border: 1px solid #ddd; text-align: center;">0.8.04前</td></tr><tr><td colspan="5" style="padding: 8px; border: 1px solid #ddd; text-align: center;">视频Ⅱ（16∶9，3～5分钟）</td><td style="padding: 8px; border: 1px solid #ddd; text-align: center;">徐</td><td style="padding: 8px; border: 1px solid #ddd; text-align: center;">08.05前</td></tr><tr><td colspan="5" style="padding: 8px; border: 1px solid #ddd; text-align: center;">视频Ⅰ、Ⅲ（16∶9，3分钟循环5次 ）</td><td style="padding: 8px; border: 1px solid #ddd; text-align: center;">黄</td><td style="padding: 8px; border: 1px solid #ddd; text-align: center;">08.05前</td></tr><tr><td colspan="7" style="padding: 8px; border: 1px solid #ddd; text-align: center;"><strong>二、活动流程：</strong><br>
+
+（一）：主持人发言，同时A、B、C屏播放视频Ⅰ（2分钟）<br>
+
+（二）：A、B、C屏播放视频Ⅱ（3～5分钟）<br>
+
+（三）：现场募捐，同时A、C屏循环播放视频Ⅲ、B屏播放视频Ⅱ（15分钟）</td></tr><tr><td style="padding: 8px; border: 1px solid #ddd; vertical-align: middle;" rowspan="2">（一）</td><td style="padding: 8px; border: 1px solid #ddd; vertical-align: middle;" rowspan="2">主持人发言</td><td style="padding: 8px; border: 1px solid #ddd;">书香筑梦，扬帆远航。卡斯夫公益是由聚汽网发起，旨在全国建设100座爱心公益图书馆、运动室，以知识之光照亮孩子们的前行道路，以阅读之匙打开未知世界的大门。聚汽网▪卡斯夫公益将携手爱心捐助企业，不断为全国各地学生的成长和梦想插上腾飞的双翼，助力学校共同为新一代成长叩响成功之门、已成功在全国建设了5家爱心图书馆。</td><td style="padding: 8px; border: 1px solid #ddd; vertical-align: middle;" rowspan="2">视频Ⅰ文案</td><td colspan="3" style="padding: 8px; border: 1px solid #ddd;">卡斯夫爱心图书馆：
+
+卡斯夫NO.001图书馆
+
+2021年6月22日，聚汽网牵头组织举办的卡斯夫公益·爱心图书馆捐赠活动在江西抚州展坪镇举办，携手快准车服为抚州市展坪镇中心小学捐赠价值五万余元的书籍和若干文具用品等。
+
+2022年9月14日，聚汽网▪卡斯夫公益携手快准车服再次来到展坪镇中心小学，完成了卡斯夫NO.001爱心图书馆的第二次复捐，为孩子们带来2600余册图书及500余套学习、体育用品。
+
+卡斯夫NO.002图书馆
+
+2023年4月10日，聚汽网▪卡斯夫公益走进玉林市博白县沙河镇大观村小学，聚汽网独家出资为学校累计捐赠2000余册图书、若干LED大屏和文体用品，并携手广西14家汽车后市场爱心企业，共同为大观村小学进行了上万元现金捐助，宣告卡斯夫NO.002图书馆的揭幕。
+
+卡斯夫NO.003图书馆
+
+2022年9月14日，聚汽网▪卡斯夫公益携手浙江安格鲁传动系统有限公司来到罗针镇初级中学，为孩子们带来图书4100余册，体育及文具510余套，宣告卡斯夫NO.003爱心图书馆正式落成。
+
+卡斯夫NO.004图书馆
+
+2023年3月30日，聚汽网▪卡斯夫公益携手汽配峰来到清河县漓江小学，举行卡斯夫NO.004图书馆的捐赠开馆仪式，捐赠4000余册图书及若干体育文具用品，助力清河县漓江小学学生的课外阅读活动及素质教育。
+
+卡斯夫NO.005图书馆
+
+2023年4月24日，聚汽网▪卡斯夫公益携手珠海美合科技股份有限公司来到长沙宁乡市沙田初级中学，举行了卡斯夫爱心图书馆NO.005捐赠开馆仪式，捐赠4000余册图书及1000份体育文具用品。</td></tr><tr><td style="padding: 8px; border: 1px solid #ddd;">值此盛典之夜，汽车后市场成功企业家济济一堂，2023卡斯夫公益特现场发起募捐活动：
+
+具体方案如方式、金额、监管方式、用途和后续回执等。
+
+现场募捐活动将在视频结束后正式开始。</td><td colspan="3" style="padding: 8px; border: 1px solid #ddd;">卡斯夫爱心图书馆：
+
+卡斯夫NO.001图书馆
+
+2021年6月22日，聚汽网牵头组织举办的卡斯夫公益·爱心图书馆捐赠活动在江西抚州展坪镇举办，携手快准车服为抚州市展坪镇中心小学捐赠价值五万余元的书籍和若干文具用品等。
+
+2022年9月14日，聚汽网▪卡斯夫公益携手快准车服再次来到展坪镇中心小学，完成了卡斯夫NO.001爱心图书馆的第二次复捐，为孩子们带来2600余册图书及500余套学习、体育用品。
+
+卡斯夫NO.002图书馆
+
+2023年4月10日，聚汽网▪卡斯夫公益走进玉林市博白县沙河镇大观村小学，聚汽网独家出资为学校累计捐赠2000余册图书、若干LED大屏和文体用品，并携手广西14家汽车后市场爱心企业，共同为大观村小学进行了上万元现金捐助，宣告卡斯夫NO.002图书馆的揭幕。
+
+卡斯夫NO.003图书馆
+
+2022年9月14日，聚汽网▪卡斯夫公益携手浙江安格鲁传动系统有限公司来到罗针镇初级中学，为孩子们带来图书4100余册，体育及文具510余套，宣告卡斯夫NO.003爱心图书馆正式落成。
+
+卡斯夫NO.004图书馆
+
+2023年3月30日，聚汽网▪卡斯夫公益携手汽配峰来到清河县漓江小学，举行卡斯夫NO.004图书馆的捐赠开馆仪式，捐赠4000余册图书及若干体育文具用品，助力清河县漓江小学学生的课外阅读活动及素质教育。
+
+卡斯夫NO.005图书馆
+
+2023年4月24日，聚汽网▪卡斯夫公益携手珠海美合科技股份有限公司来到长沙宁乡市沙田初级中学，举行了卡斯夫爱心图书馆NO.005捐赠开馆仪式，捐赠4000余册图书及1000份体育文具用品。</td></tr><tr><td style="padding: 8px; border: 1px solid #ddd; vertical-align: middle;" rowspan="6">（二）</td><td style="padding: 8px; border: 1px solid #ddd; vertical-align: middle;" rowspan="6">视频Ⅱ文案</td><td colspan="5" style="padding: 8px; border: 1px solid #ddd;">地缘冲突持续震荡
+
 全球通胀暗潮涌动
+
 疫情阴霾挥之难去
+
 贫富差距  不断扩大
+
 极端天气  多地频发
-这个世界的阳?
+
+这个世界的阳光
+
 也许  
+
 并非照耀到了每个角落
+
 也令我思考明天和意外
+
 究竟是谁  等在清晨开启的门外
+
 生命  意义何在
-幸福  姓甚名谁</td></tr><tr><td colspan="5" style="padding: 8px; border: 1px solid #ddd;">直到我看到那双纯净笃定的眼?
+
+幸福  姓甚名谁</td></tr><tr><td colspan="5" style="padding: 8px; border: 1px solid #ddd;">直到我看到那双纯净笃定的眼眸
+
 直到我被童稚而真诚的笑容环绕
+
 当一声声热切感谢  周遭传来
+
 一切的答案  
+
 终于迎刃而解
+
 能够给予  便是幸福
-化身撑起希望?
+
+化身撑起希望者
+
 自身  便不再怯懦忧虑</td></tr><tr><td colspan="5" style="padding: 8px; border: 1px solid #ddd;">小小善意汇聚
-成就一个又一个梦?
-让无力者有?
-让有力者前?
-在这场为孩子们的筑梦之旅?
+
+成就一个又一个梦想
+
+让无力者有力
+
+让有力者前行
+
+在这场为孩子们的筑梦之旅中
+
 哪怕是微光
+
 也值得始终坚持
+
 一束光  可以穿越银河  照亮夜空
-一粒种? 可以奋力破土  参天而立
+
+一粒种子  可以奋力破土  参天而立
+
 一本本图书  可以铸就阶梯
-打开孩子们触摸未来的窗口</td></tr><tr><td colspan="5" style="padding: 8px; border: 1px solid #ddd;">2023?
-聚汽网再次化身筑梦?
-发起卡斯夫公益▪爱心图书馆捐赠活?
+
+打开孩子们触摸未来的窗口</td></tr><tr><td colspan="5" style="padding: 8px; border: 1px solid #ddd;">2023年
+
+聚汽网再次化身筑梦者
+
+发起卡斯夫公益▪爱心图书馆捐赠活动
+
 穿越崇山峻岭
+
 走进偏远山区
+
 让孩子们感受到汽后从业者的温情光辉
+
 我们  因爱而聚
+
 我们  为梦而来
+
 你我同行
+
 这场助学圆梦之旅
-又有了更多强大支?/td></tr><tr><td colspan="5" style="padding: 8px; border: 1px solid #ddd;">让心与心再次贴近
-让爱与爱的传递继?
+
+又有了更多强大支脉</td></tr><tr><td colspan="5" style="padding: 8px; border: 1px solid #ddd;">让心与心再次贴近
+
+让爱与爱的传递继续
+
 让孩子们
-在贫穷的土地? 
+
+在贫穷的土地上  
+
 也能汲取养分  茁壮成长
-在命运的洼地? 
+
+在命运的洼地里  
+
 也能眺望世界  仰望星辰
+
 即使身处逆境  
+
 也能闯出天地</td></tr><tr><td colspan="5" style="padding: 8px; border: 1px solid #ddd;">助飞梦想  同享盛世
+
 2023
+
 世界本就如此美好
-卡斯夫公益▪爱心图书馆捐?
+
+卡斯夫公益▪爱心图书馆捐赠
+
 有你
+
 有我</td></tr></tbody></table></div>
+
                 </div>
+
             </div>
+
           </div>
+
         </div>
+
       </section>
+
       
-      <!-- 固定定位的返回按?-->
+
+      <!-- 固定定位的返回按钮 -->
+
       <div class="fixed-return-btn">
+
         <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" class="btn btn-dark">回到顶部</a>
+
       </div>
+
     </main>
+
   </div>
 
+
+
   <!-- JavaScript -->
+
   <script src="/../js/jquery-1.11.0.min.js"></script>
+
   <script src="/../js/plugins.js"></script>
+
   <script src="/../js/script.js"></script>
+
   <script src="/../js/bootstrap.bundle.min.js"></script>
+
   <script src="/../js/aos.js"></script>
+
   <script>
+
   </script>
+
   </html>
+
