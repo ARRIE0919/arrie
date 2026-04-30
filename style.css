@@ -83,6 +83,7 @@ body {
   scroll-padding-top: 0 !important;
   margin-top: 0 !important;
   padding-top: 0 !important;
+  font-family: var(--bs-body-font-family) !important;
 }
 
 /* 确保所有section都能正确滚动到顶部 */
