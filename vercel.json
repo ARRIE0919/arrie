@@ -1,51 +1,10 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "server.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "*.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "css/**/*",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "js/**/*",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "images/**/*",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "fonts/**/*",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "作品集/**/*",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "文章/**/*",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "视频/**/*",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "平面/**/*",
-      "use": "@vercel/static"
-    }
-  ],
   "routes": [
     {
       "src": "/api/chat",
-      "dest": "server.js"
+      "dest": "server.js",
+      "methods": ["POST"]
     },
     {
       "src": "/(.*)",
