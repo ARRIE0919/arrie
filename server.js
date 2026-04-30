@@ -107,9 +107,9 @@ app.post('/api/chat', async (req, res) => {
 // 静态文件服务
 app.use(express.static(__dirname));
 
-// 根路径重定向到 ARRIE.html
+// 根路径重定向到 index.html（已重命名）
 app.get('/', (req, res) => {
-  res.redirect('/ARRIE.html');
+  res.redirect('/index.html');
 });
 
 // 启动服务器
