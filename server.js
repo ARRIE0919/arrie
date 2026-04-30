@@ -1,8 +1,9 @@
 const express = require('express');
 const cors = require('cors');
+const path = require('path');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // API密钥（从环境变量读取，支持 Vercel 部署）
 const API_KEY = process.env.DOUBAO_API_KEY || 'ark-400da2ec-08f8-4986-a83b-92ff0c992162-1f9b6';
@@ -104,12 +105,15 @@ app.post('/api/chat', async (req, res) => {
   }
 });
 
-// 静态文件服务
-app.use(express.static(__dirname));
+// 静态文件服务 - 支持多种文件扩展名
+app.use(express.static(path.join(__dirname), {
+  extensions: ['html', 'css', 'js', 'png', 'jpg', 'gif', 'svg', 'ico', 'woff', 'woff2'],
+  index: 'index.html'
+}));
 
-// 根路径重定向到 index.html（已重命名）
+// 根路径直接返回 index.html
 app.get('/', (req, res) => {
-  res.redirect('/index.html');
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 // 启动服务器
