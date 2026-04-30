@@ -425,6 +425,7 @@ main {
 #one-page-menu .nav-link {
   position: relative;
   color: #111;
+  font-family: "阿里巴巴普惠体", Verdana, sans-serif;
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
